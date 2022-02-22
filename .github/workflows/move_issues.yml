@@ -1,0 +1,17 @@
+name: Move assigned card
+on:
+  issues:
+    types: [assigned]
+jobs:
+  moveCard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or Update Project Card
+        uses: peter-evans/create-or-update-project-card@v1
+        with:
+          token: ${{ secrets.GH_AUTOMATION_TOKEN }}
+          project-location: databeacon
+          project-name: # PROJECT NAME
+          column-name: In progress
+          
+          
