@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://github.com/databeacon/level5-schemas/schemas/streamingFlights.json",
-    "title": "Flights",
+    "title": "Streaming Flights",
     "version": "1.0.0",
-    "description": "Definition for a flight",
+    "description": "Definition for a flights dynamic data",
     "type": "object",
     "properties": {
         "date": {
@@ -24,11 +24,11 @@
         },
         "lat_deg": {
             "description": "Latitude in degrees at message datetime",
-            "type": "float"
+            "type": "numeric"
         },
         "lon_deg": {
             "description": "Longitude in degrees at message datetime",
-            "type": "float"
+            "type": "numeric"
         },
         "alt_ft": {
             "description": "Altitude in feet",
@@ -40,15 +40,15 @@
         },
         "proj_lat_deg": {
             "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "float"
+            "type": "numeric"
         },
         "proj_lon_deg": {
             "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "float"
+            "type": "numeric"
         },
         "proj_alt_ft": {
             "description": "Altitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "float"
+            "type": "numeric"
         },
         "nav_alt_ft": {
             "description": "Target altitude Mode-S",

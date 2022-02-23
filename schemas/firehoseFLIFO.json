@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://github.com/databeacon/level5-schemas/schemas/firehosePositions.json",
-    "title": "Flights",
+    "title": "Firehose FLIFO",
     "version": "1.0.0",
-    "description": "Definition for a flight",
+    "description": "Definition for firehose static flight information",
     "type": "object",
     "properties": {
         "pitr": {

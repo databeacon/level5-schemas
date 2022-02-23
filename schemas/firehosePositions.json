@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://github.com/databeacon/level5-schemas/schemas/firehoseFLIFO.json",
-    "title": "Flights",
+    "title": "Firehose Positions",
     "version": "1.0.0",
-    "description": "Definition for a flight",
+    "description": "Definition for a firehose positions data",
     "type": "object",
     "properties": {
         "clock": {
@@ -28,23 +28,23 @@
         },
         "lat": {
             "description": "Latitude in decimal degrees, rounded to 5 decimal points",
-            "type": "float"
+            "type": "numeric"
         },
         "lon": {
             "description": "Longitude in decimal degrees, rounded to 5 decimal points",
-            "type": "float"
+            "type": "numeric"
         },
         "alt": {
             "description": "Altitude in feet (MSL)",
-            "type": "float"
+            "type": "numeric"
         },
         "nav_altitude": {
             "description": "The altitude setting, in feet, from the navigation equipment (Mode-S)",
-            "type": "float"
+            "type": "numeric"
         },
         "nav_heading": {
             "description": "The heading, in degrees, from the navigation equipment (Mode-S)",
-            "type": "float"
+            "type": "numeric"
         },
         "heading": {
             "description": "Course in degrees",
