@@ -27,11 +27,11 @@
                     "properties": {
                         "lat": {
                             "description": "Aircraft position latitude in degrees",
-                            "type": "numeric"
+                            "type": "number"
                         },
                         "lng": {
                             "description": "Aircraft position longitude in degrees",
-                            "type": "numeric"
+                            "type": "number"
                         },
                         "alt": {
                             "description": "Aircraft position altitude in feet",
@@ -41,7 +41,7 @@
                 },
                 "gs": {
                     "description": "Aircraft groundspeed in kts",
-                    "type": "numeric"
+                    "type": "number"
                 },
                 "track": {
                     "description": "Aircraft heading in degrees",
@@ -49,7 +49,7 @@
                 },
                 "turnSpeed": {
                     "description": "Aircraft turnspeed in kts",
-                    "type": "numeric"
+                    "type": "number"
                 },
                 "horizontalStatus": {
                     "description": "Aircraft horizontal manouvre type",
@@ -114,13 +114,13 @@
                             "type": "object",
                             "properties": {
                                 "lat": {
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
         
@@ -131,15 +131,15 @@
                             "properties": {
                                 "lat": {
                                     "description": "Projection latitude 60s ahead in degrees",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "Projection longitude 60s ahead in degrees",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
                                     "description": "Projection altitude. Never used",
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
                         }
@@ -197,14 +197,14 @@
                             "type": "object",
                             "properties": {
                                 "lat": {
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
                                     "description": "Never calculated",
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
                         }
@@ -230,11 +230,11 @@
                 },
                 "segEpoch": {
                     "description": "", 
-                    "type": "numeric"
+                    "type": "number"
                 },
                 "segDist":  {
                     "description": "", 
-                    "type": "numeric"
+                    "type": "number"
                 },
                 "isPcd":  {
                     "description": "", 
@@ -246,7 +246,7 @@
                 },
                 "currentDist":  {
                     "description": "", 
-                    "type": "numeric"
+                    "type": "number"
                 },
                 "ownship": {
                     "description": "Ownship position and CPA", 
@@ -261,15 +261,15 @@
                             "properties": {
                                 "lat": {
                                     "description": "flight location.lat when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "flight location.lng when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
                                     "description": "Never calculated",
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
                         },
@@ -279,15 +279,15 @@
                             "properties": {
                                 "lat": {
                                     "description": "CPA location.lat when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "CPA location.lng when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
                                     "description": "Never calculated",
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
                         }
@@ -306,15 +306,15 @@
                             "properties": {
                                 "lat": {
                                     "description": "flight location.lat when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "flight location.lng when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
                                     "description": "Never calculated",
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
                         },
@@ -324,15 +324,15 @@
                             "properties": {
                                 "lat": {
                                     "description": "CPA location.lat when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "CPA location.lng when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
                                     "description": "Never calculated",
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
                         }
@@ -345,7 +345,7 @@
                     },
                     "currentDist":  {
                         "description": "", 
-                        "type": "numeric"
+                        "type": "number"
                     },
                     "ownship": {
                         "id": {
@@ -358,15 +358,15 @@
                             "properties": {
                                 "lat": {
                                     "description": "CPA location.lat when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "lng": {
                                     "description": "CPA location.lng when PCD was computed",
-                                    "type": "numeric"
+                                    "type": "number"
                                 },
                                 "alt": {
                                     "description": "Never calculated",
-                                    "type": "numeric"
+                                    "type": "number"
                                 }
                             }
                         }
@@ -384,15 +384,15 @@
                                 "properties": {
                                     "lat": {
                                         "description": "flight location.lat when PCD was computed",
-                                        "type": "numeric"
+                                        "type": "number"
                                     },
                                     "lng": {
                                         "description": "flight location.lng when PCD was computed",
-                                        "type": "numeric"
+                                        "type": "number"
                                     },
                                     "alt": {
                                         "description": "Never calculated",
-                                        "type": "numeric"
+                                        "type": "number"
                                     }
                                 }
                             }

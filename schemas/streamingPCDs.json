@@ -28,11 +28,11 @@
         },
         "lat_deg_ownship": {
             "description": "Latitude in degrees from last position received from ownship",
-            "type": "numeric"
+            "type": "number"
         },
         "lon_deg_ownship": {
             "description": "Longitude in degrees from last position received from ownship",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_date_ownship": {
             "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
@@ -40,11 +40,11 @@
         },
         "proj_lat_deg_ownship": {
             "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_lon_deg_ownship": {
             "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "date_intruder": {
             "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
@@ -52,11 +52,11 @@
         },
         "lat_deg_intruder": {
             "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "lon_deg_intruder": {
             "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_date_intruder": {
             "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
@@ -64,11 +64,11 @@
         },
         "proj_lat_deg_intruder": {
             "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_lon_deg_intruder": {
             "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "ref_epoch": {
             "description": "Oldest datime from pair of flights for delay metrics",
@@ -80,7 +80,7 @@
         },
         "current_distance_nm": {
             "description": "Distance between the pair measured at current datetime",
-            "type": "numeric"
+            "type": "number"
         },
         "warning_epoch": {
             "description": "Target warning datetime",
@@ -88,27 +88,27 @@
         },
         "warning_distance_nm": {
             "description": "Target warning distance in NM",
-            "type": "numeric"
+            "type": "number"
         },
         "cpa_ownship_lat_deg": {
             "description": "Latitude in degrees of the CPA for the ownship",
-            "type": "numeric"
+            "type": "number"
         },
         "cpa_ownship_lon_deg": {
             "description": "Longitude in degrees of the CPA for the ownship",
-            "type": "numeric"
+            "type": "number"
         },
         "cpa_intruder_lat_deg": {
             "description": "Longitude in degrees of the CPA for the ownship",
-            "type": "numeric"
+            "type": "number"
         },
         "cpa_intruder_lon_deg": {
             "description": "Longitude in degrees of the CPA for the ownship",
-            "type": "numeric"
+            "type": "number"
         },
         "is_ownship_first": {
             "description": "Flag indicating which aircraft is crossing first",
-            "type": "numeric"
+            "type": "number"
         }
     }
 }

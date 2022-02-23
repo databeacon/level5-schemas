@@ -24,11 +24,11 @@
         },
         "lat_deg": {
             "description": "Latitude in degrees at message datetime",
-            "type": "numeric"
+            "type": "number"
         },
         "lon_deg": {
             "description": "Longitude in degrees at message datetime",
-            "type": "numeric"
+            "type": "number"
         },
         "alt_ft": {
             "description": "Altitude in feet",
@@ -40,15 +40,15 @@
         },
         "proj_lat_deg": {
             "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_lon_deg": {
             "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_alt_ft": {
             "description": "Altitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "numeric"
+            "type": "number"
         },
         "nav_alt_ft": {
             "description": "Target altitude Mode-S",

@@ -28,15 +28,15 @@
         },
         "proj_exit_lat_deg": {
             "description": "ICAO airport code, waypoint, or latitude/longitude pair",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_exit_lon_deg": {
             "description": "ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not known",
-            "type": "numeric"
+            "type": "number"
         },
         "proj_exit_alt_ft": {
             "description": "Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled",
-            "type": "numeric"
+            "type": "number"
         },
         "any_pcd": {
             "description": "The scheduled out (gate departure) time (POSIX epoch format)",

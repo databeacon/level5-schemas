@@ -28,23 +28,23 @@
         },
         "lat": {
             "description": "Latitude in decimal degrees, rounded to 5 decimal points",
-            "type": "numeric"
+            "type": "number"
         },
         "lon": {
             "description": "Longitude in decimal degrees, rounded to 5 decimal points",
-            "type": "numeric"
+            "type": "number"
         },
         "alt": {
             "description": "Altitude in feet (MSL)",
-            "type": "numeric"
+            "type": "number"
         },
         "nav_altitude": {
             "description": "The altitude setting, in feet, from the navigation equipment (Mode-S)",
-            "type": "numeric"
+            "type": "number"
         },
         "nav_heading": {
             "description": "The heading, in degrees, from the navigation equipment (Mode-S)",
-            "type": "numeric"
+            "type": "number"
         },
         "heading": {
             "description": "Course in degrees",
