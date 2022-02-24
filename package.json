@@ -17,7 +17,8 @@
     "url": "https://github.com/databeacon/level5-schemas/issues"
   },
   "homepage": "https://github.com/databeacon/level5-schemas#readme",
-  "dependencies": {
-    "@adobe/jsonschema2md": "^7.0.0"
+  "devDependencies": {
+    "@adobe/jsonschema2md": "^7.0.0",
+    "wetzel": "^0.2.3"
   }
 }
