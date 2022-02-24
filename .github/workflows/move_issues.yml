@@ -11,7 +11,7 @@ jobs:
         with:
           token: ${{ secrets.GH_AUTOMATION_TOKEN }}
           project-location: databeacon
-          project-name: # PROJECT NAME
+          project-name: Machine Learning Squad
           column-name: In progress
           
           
