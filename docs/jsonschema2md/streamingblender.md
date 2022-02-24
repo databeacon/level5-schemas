@@ -16,12 +16,12 @@ Definition the blender stream
 
 # Streaming Blender Properties
 
-| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                          |
-| :------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [epoch](#epoch)     | `integer` | Optional | cannot be null | [Streaming Blender](streamingblender-properties-epoch.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/epoch")     |
-| [flights](#flights) | `object`  | Optional | cannot be null | [Streaming Blender](streamingblender-properties-flights.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/flights") |
-| [nct](#nct)         | `object`  | Optional | cannot be null | [Streaming Blender](streamingblender-properties-nct.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/nct")         |
-| [pcds](#pcds)       | `object`  | Optional | cannot be null | [Streaming Blender](streamingblender-properties-pcds.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/pcds")       |
+| Property            | Type      | Required | Nullable       | Defined by                                                                                                                                                                             |
+| :------------------ | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [epoch](#epoch)     | `integer` | Optional | cannot be null | [Streaming Blender](streamingblender-properties-epoch.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/epoch")                        |
+| [flights](#flights) | `object`  | Optional | cannot be null | [Streaming Blender](streamingblender-properties-flight.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/flights")                     |
+| [nct](#nct)         | `object`  | Optional | cannot be null | [Streaming Blender](streamingblender-properties-non-conflicting-flights.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/nct")        |
+| [pcds](#pcds)       | `object`  | Optional | cannot be null | [Streaming Blender](streamingblender-properties-potential-conflict-detection-.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/pcds") |
 
 ## epoch
 
@@ -43,21 +43,21 @@ Sync epoch, i.e., time on which this will be represented on map
 
 ## flights
 
-
+Represents a single flight
 
 `flights`
 
 *   is optional
 
-*   Type: `object` ([Details](streamingblender-properties-flights.md))
+*   Type: `object` ([Flight](streamingblender-properties-flight.md))
 
 *   cannot be null
 
-*   defined in: [Streaming Blender](streamingblender-properties-flights.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/flights")
+*   defined in: [Streaming Blender](streamingblender-properties-flight.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/flights")
 
 ### flights Type
 
-`object` ([Details](streamingblender-properties-flights.md))
+`object` ([Flight](streamingblender-properties-flight.md))
 
 ## nct
 
@@ -67,15 +67,15 @@ Refers to our mike5-stream NCTs calculation pipeline
 
 *   is optional
 
-*   Type: `object` ([Details](streamingblender-properties-nct.md))
+*   Type: `object` ([Non-conflicting flights](streamingblender-properties-non-conflicting-flights.md))
 
 *   cannot be null
 
-*   defined in: [Streaming Blender](streamingblender-properties-nct.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/nct")
+*   defined in: [Streaming Blender](streamingblender-properties-non-conflicting-flights.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/nct")
 
 ### nct Type
 
-`object` ([Details](streamingblender-properties-nct.md))
+`object` ([Non-conflicting flights](streamingblender-properties-non-conflicting-flights.md))
 
 ## pcds
 
@@ -85,12 +85,12 @@ Refers to our mike5-stream PCDs calculation pipeline
 
 *   is optional
 
-*   Type: `object` ([Details](streamingblender-properties-pcds.md))
+*   Type: `object` ([Potential conflict detection ](streamingblender-properties-potential-conflict-detection-.md))
 
 *   cannot be null
 
-*   defined in: [Streaming Blender](streamingblender-properties-pcds.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/pcds")
+*   defined in: [Streaming Blender](streamingblender-properties-potential-conflict-detection-.md "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json#/properties/pcds")
 
 ### pcds Type
 
-`object` ([Details](streamingblender-properties-pcds.md))
+`object` ([Potential conflict detection ](streamingblender-properties-potential-conflict-detection-.md))

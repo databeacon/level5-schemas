@@ -11,7 +11,9 @@
             "type": "integer"
         },
         "flights": {
+            "description" : "Represents a single flight",
             "type": "object",
+            "title": "Flight",
             "properties": {
                 "id": {
                     "description": "",
@@ -24,6 +26,7 @@
                 "location": {
                     "description": "Aircraft 4D position",
                     "type": "object",
+                    "title": "Location",
                     "properties": {
                         "lat": {
                             "description": "Aircraft position latitude in degrees",
@@ -102,8 +105,9 @@
                     "type": "integer"
                 },
                 "synced": {
-                    "description": "",
+                    "description": "Synced properties of the Flight object",
                     "type": "object",
+                    "title": "Synced Flight",
                     "properties": {
                         "epoch": {
                             "description": "Should match position epoch",
@@ -112,6 +116,7 @@
                         "location": {
                             "description": "Aircraft synced 4D location",
                             "type": "object",
+                            "title" :"Synced position",
                             "properties": {
                                 "lat": {
                                     "type": "number"
@@ -128,6 +133,7 @@
                         "projection": {
                             "description": "4D location at 60s ahead of sync epoch",
                             "type": "object",
+                            "title" : "Position projection",
                             "properties": {
                                 "lat": {
                                     "description": "Projection latitude 60s ahead in degrees",
@@ -150,6 +156,7 @@
         "nct": {
             "description": "Refers to our mike5-stream NCTs calculation pipeline",
             "type": "object",
+            "title" : "Non-conflicting flights",
             "properties": {
                 "id": {
                     "description": "NCT unique identifier",
@@ -187,6 +194,7 @@
                 "projExit": {
                     "description": "Projection for soft-NCTs",
                     "type": "object",
+                    "title" : "Exit projection",
                     "properties": {
                         "epoch": {
                             "description": "Projection epoch",
@@ -195,6 +203,7 @@
                         "location": {
                             "description": "4D Projected position",
                             "type": "object",
+                            "title" :"Projected position",
                             "properties": {
                                 "lat": {
                                     "type": "number"
@@ -212,13 +221,15 @@
                 },
                 "synced": {
                     "description": "Nothing to sync yet",
-                    "type": "object"
+                    "type": "object",
+                    "title" :"Synced NCT"
                 }
             }
         },
         "pcds": {
             "description": "Refers to our mike5-stream PCDs calculation pipeline",
             "type": "object",
+            "title" :"Potential conflict detection ",
             "properties": {
                 "id": {
                     "description": "", 
@@ -251,6 +262,7 @@
                 "ownship": {
                     "description": "Ownship position and CPA", 
                     "type": "object", 
+                    "title" :"Ownship",
                     "properties": {
                         "id": {
                             "type": "string"
@@ -258,6 +270,7 @@
                         "location": {
                             "description": "4D Projected position",
                             "type": "object",
+                            "title" :"Projected position",
                             "properties": {
                                 "lat": {
                                     "description": "flight location.lat when PCD was computed",
@@ -276,6 +289,7 @@
                         "cpa": {
                             "description": "4D Projected position",
                             "type": "object",
+                            "title" :"Projected position",
                             "properties": {
                                 "lat": {
                                     "description": "CPA location.lat when PCD was computed",
@@ -295,7 +309,8 @@
                 },
                 "intruder": {
                     "description": "Intruder position and CPA", 
-                    "type": "object", 
+                    "type": "object",
+                    "title" :"Intruder", 
                     "properties": {
                         "id": {
                             "type": "string"
@@ -303,6 +318,7 @@
                         "location": {
                             "description": "4D Projected position",
                             "type": "object",
+                            "title" :"Projected position",
                             "properties": {
                                 "lat": {
                                     "description": "flight location.lat when PCD was computed",
@@ -321,6 +337,7 @@
                         "cpa": {
                             "description": "4D Projected position",
                             "type": "object",
+                             "title" :"Projected cpa",
                             "properties": {
                                 "lat": {
                                     "description": "CPA location.lat when PCD was computed",
@@ -355,6 +372,7 @@
                         "location": {
                             "description": "4D Projected position",
                             "type": "object",
+                             "title" :"Projected position",
                             "properties": {
                                 "lat": {
                                     "description": "CPA location.lat when PCD was computed",
@@ -373,7 +391,8 @@
                     },
                     "intruder": {
                         "description": "Intruder position and CPA", 
-                        "type": "object", 
+                        "type": "object",
+                        "title" :"Intruder", 
                         "properties": {
                             "id": {
                                 "type": "string"
@@ -381,6 +400,7 @@
                             "location": {
                                 "description": "4D Projected position",
                                 "type": "object",
+                                "title" :"Projected position",
                                 "properties": {
                                     "lat": {
                                         "description": "flight location.lat when PCD was computed",
