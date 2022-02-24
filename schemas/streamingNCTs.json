@@ -46,6 +46,5 @@
             "description": "The scheduled in (gate arrival) time (POSIX epoch format)",
             "type": "boolean"
         }
-    },
-    "required": [ "id", "id_flight", "pitr", "is_nct" ]
+    }
 }

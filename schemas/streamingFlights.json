@@ -8,11 +8,13 @@
     "properties": {
         "date": {
             "description": "Message datetime",
-            "type": "timestampz"
+            "type": "string",
+            "format": "date"
         },
         "pitr": {
             "description": "Message PITR",
-            "type": "timestampz"
+            "type": "string",
+            "format": "date"
         },
         "id": {
             "description": "Flight unique identifier",
@@ -110,6 +112,5 @@
             "description": "Expected last datetime after the aircraft leaves te defined area",
             "type": "integer"
         }
-    },
-    "required": ["id", "date", "pitr"]
+    }
 }
