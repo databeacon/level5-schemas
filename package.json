@@ -1,0 +1,23 @@
+{
+  "name": "level5-schemas",
+  "version": "1.0.0",
+  "description": "Level5 schemas repository, plus exploration and documentation tool.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build:jsonschema2md": "scripts/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/databeacon/level5-schemas.git"
+  },
+  "author": "DataBeacon SL",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/databeacon/level5-schemas/issues"
+  },
+  "homepage": "https://github.com/databeacon/level5-schemas#readme",
+  "dependencies": {
+    "@adobe/jsonschema2md": "^7.0.0"
+  }
+}
