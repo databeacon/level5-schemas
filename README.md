@@ -2,6 +2,10 @@
 
 Repository for public documentation of level5 data schemas used in "json-schema" format.
 
+## Docs
+
+Find the latest docs [HERE](https://github.com/databeacon/level5-schemas/blob/main/docs/jsonschema2md/README.md)
+
 ## To generate docs manually
 
 ### Using jsonschema2md
