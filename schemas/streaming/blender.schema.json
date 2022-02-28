@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/databeacon/level5-schemas/schemas/streamingBlender.schema.json",
+    "$id": "https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json",
     "title": "Streaming Blender",
     "version": "1.0.0",
     "description": "Definition the blender stream",
@@ -232,23 +232,23 @@
             "title" :"Potential conflict detection ",
             "properties": {
                 "id": {
-                    "description": "", 
+                    "description": "PCD unique identifier", 
                     "type": "string"
                 },
                 "isFirst": {
-                    "description": "", 
+                    "description": "Flag indicating if aircraft is crossing first", 
                     "type": "boolean"
                 },
                 "segEpoch": {
-                    "description": "", 
+                    "description": "Crossing time in epochs", 
                     "type": "number"
                 },
                 "segDist":  {
-                    "description": "", 
+                    "description": "Crossing distance in NM", 
                     "type": "number"
                 },
                 "isPcd":  {
-                    "description": "", 
+                    "description": "PCD activation or de-activation flag", 
                     "type": "boolean"
                 },
                 "epoch":  {
@@ -256,7 +256,7 @@
                     "type": "integer"
                 },
                 "currentDist":  {
-                    "description": "", 
+                    "description": "Current distance between conflicting aircrafts in NM", 
                     "type": "number"
                 },
                 "ownship": {

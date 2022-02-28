@@ -1,9 +1,9 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/databeacon/level5-schemas/edit/main/schemas/streamingFlights.schema.json",
-    "title": "Streaming Flights",
+    "$id": "https://github.com/databeacon/level5-schemas/edit/main/schemas/batch/flights.schema.json",
+    "title": "Batch Flights",
     "version": "1.0.0",
-    "description": "Definition for a flights dynamic data",
+    "description": "Definition for a flights dynamic batch data",
     "type": "object",
     "properties": {
         "date": {
@@ -110,6 +110,22 @@
         },
         "date_leaving": {
             "description": "Expected last datetime after the aircraft leaves te defined area",
+            "type": "integer"
+        },
+        "year": {
+            "description": "Year extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "month": {
+            "description": "Month as number, extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "day": {
+            "description": "Day extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "hour": {
+            "description": "Hour extracted from date, used as partition column",
             "type": "integer"
         }
     }

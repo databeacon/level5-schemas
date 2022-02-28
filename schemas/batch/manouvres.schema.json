@@ -1,0 +1,26 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json",
+    "title": "Manouvres (historical data)",
+    "version": "1.0.0",
+    "description": "Definition of the manouvres historical data",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "Potential conflict unique identifier",
+            "type": "string"
+        },
+        "month": {
+            "description": "Month as number, extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "day": {
+            "description": "Day extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "hour": {
+            "description": "Hour extracted from date, used as partition column",
+            "type": "integer"
+        }
+    }
+}

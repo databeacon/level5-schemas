@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/databeacon/level5-schemas/schemas/firehosePositions.schema.json",
+    "$id": "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json",
     "title": "Firehose FLIFO",
     "version": "1.0.0",
     "description": "Definition for firehose static flight information",

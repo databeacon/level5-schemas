@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/databeacon/level5-schemas/schemas/streamingFLIFO.schema.json",
+    "$id": "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json",
     "title": "Streaming FLIFO",
     "version": "1.0.0",
     "description": "Definition for a flights static data",

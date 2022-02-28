@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/databeacon/level5-schemas/schemas/batchPCDs.schema.json",
+    "$id": "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json",
     "title": "Streaming PCDs",
     "version": "1.0.0",
     "description": "Definition of the batch PCDs data",

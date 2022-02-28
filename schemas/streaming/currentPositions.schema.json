@@ -1,7 +1,7 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json",
-    "title": "Current Positions",
+    "$id": "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json",
+    "title": "Streaming Current Positions",
     "version": "1.0.0",
     "description": "Definition for current positions caché used for streaming calculations",
     "type": "object",
