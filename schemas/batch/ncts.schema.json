@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json",
     "title": "Labels predictive NCTs",
     "version": "1.0.0",
     "description": "Definition of the streaming NCTs data",

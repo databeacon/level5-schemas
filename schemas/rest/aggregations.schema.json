@@ -1,0 +1,82 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/rest/aggregations.schema.json",
+    "title": "Aggregations",
+    "version": "1.0.0",
+    "description": "KPI aggregations for Sierra5 supervisor tool",
+    "type": "object",
+    "properties": {
+        "epoch": {
+            "description": "Identifier code ",
+            "type": "string"
+        },
+        "multisectors": {
+            "description": "Type of airport",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "airspace": {
+                        "description": "Airspace identifier (ACC, FIR, ect...)",
+                        "type": "string"
+                    },
+                    "name": {
+                        "description":"Multisector name or identifier, e.g. B13",
+                        "type": "string"
+                    },
+                    "capacity": {
+                        "description": "Multi sector defined capacity",
+                        "type": "integer",
+                        "minimium": 0
+                    }, 
+                    "disclaimer": {
+                        "description": "Notes regarding sectorisation; e.g. 'B1 excl.'", 
+                        "type": "string"
+                    },
+                    "aggregations": {
+                        "descriptions": "Array with each KPI list per window range",
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id_window": {
+                                    "description": "Window identifier", 
+                                    "type": "string"
+                                },
+                                "start": {
+                                    "description": "Window epoch start",
+                                    "type": "integer"
+                                },
+                                "end": {
+                                    "description": "Window epoch end",
+                                    "type": "integer"
+                                },
+                                "occ": {
+                                    "description": "Occupancy KPI measured as the number of aircraft that have occupied the multisector within the time window",
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "n_pcds": {
+                                    "description": "Number of PCDs that occured in the multisector within the time window",
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "n_ncts": {
+                                    "description": "Number of NCTs entering the multisector within the time window",
+                                    "type": "integer",
+                                    "minimum": 0
+                                },
+                                "workload": {
+                                    "description": "Estimated ACTO workload",
+                                    "type": "integer",
+                                    "minimum": 0, 
+                                    "maximum": 1
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
