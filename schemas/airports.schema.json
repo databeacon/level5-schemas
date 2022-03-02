@@ -1,0 +1,63 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json",
+    "title": "Airports",
+    "version": "1.0.0",
+    "description": "Definition for the airports cache table used as ETL helper",
+    "type": "object",
+    "properties": {
+        "ident": {
+            "description": "Identifier code ",
+            "type": "string"
+        },
+        "type": {
+            "description": "Type of airport",
+            "type": "string"
+        },
+        "name": {
+            "description": "Airport name",
+            "type": "string"
+        },
+        "latitude_deg": {
+            "description": "Airport location latitude in degrees",
+            "type": "string"
+        },
+        "longitude_deg": {
+            "description": "Airport location longitude in degrees",
+            "type": "string"
+        },
+        "elevation_ft": {
+            "description": "Airport location altitude in ft",
+            "type": "string"
+        },
+        "continent": {
+            "description": "Airport location continent",
+            "type": "string"
+        },
+        "iso_country": {
+            "description": "Airport localtion ISO country identifier",
+            "type": "string"
+        },
+        "iso_region": {
+            "description": "Airport location ISO region identifier",
+            "type": "string"
+        },
+        "municipality": {
+            "description": "Airport location municipality",
+            "type": "string"
+        },
+        "scheduled_service": {
+            "description": "Flag indicating service scheduling",
+            "type": "string",
+            "enum": ["yes", "no"]
+        },
+        "gps_code": {
+            "description": "GPS code",
+            "type": "string"
+        },
+        "iata_code": {
+            "description": "IATA airport code",
+            "type": "string"
+        }
+    }
+}

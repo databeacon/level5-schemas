@@ -1,0 +1,71 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json",
+    "title": "Firehose FLIFO",
+    "version": "1.0.0",
+    "description": "Definition for firehose static flight information",
+    "type": "object",
+    "properties": {
+        "pitr": {
+            "description": "Point in time recovery",
+            "type": "integer"
+        },
+        "id": {
+            "description": "FlightAware flight id",
+            "type": "string"
+        },
+        "ident": {
+            "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
+            "type": "string"
+        },
+        "atcident": {
+            "description": "Identifier used for ATC, if it differs from flight identifier",
+            "type": "string"
+        },
+        "reg": {
+            "description": "The tail number or registration of the aircraft, if known and it differs from the ident",
+            "type": "string"
+        },
+        "aircrafttype": {
+            "description": "FAA or ICAO aircraft type code",
+            "type": "string"
+        },
+        "orig": {
+            "description": "ICAO airport code, waypoint, or latitude/longitude pair",
+            "type": "string"
+        },
+        "dest": {
+            "description": "ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not known",
+            "type": "string"
+        },
+        "status": {
+            "description": "Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled",
+            "type": "string"
+        },
+        "scheduled_off": {
+            "description": "The scheduled out (gate departure) time (POSIX epoch format)",
+            "type": "integer"
+        },
+        "scheduled_on": {
+            "description": "The scheduled in (gate arrival) time (POSIX epoch format)",
+            "type": "integer"
+        },
+        "estimated_off": {
+            "description": "The estimated out (gate departure) time (POSIX epoch format)",
+            "type": "integer"
+        },
+        "estimated_on": {
+            "description": "The estimated in (gate arrival) time (POSIX epoch format)",
+            "type": "integer"
+        },
+        "actual_on": {
+            "description": "The actual in (gate arrival) time (POSIX epoch format)",
+            "type": "integer"
+        },
+        "actual_off": {
+            "description": "The actual out (gate departure) time (POSIX epoch format)",
+            "type": "integer"
+        }
+    },
+    "required": [ "id", "ident", "pitr" ]
+}

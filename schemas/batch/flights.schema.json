@@ -1,0 +1,132 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/flights.schema.json",
+    "title": "Batch Flights",
+    "version": "1.0.0",
+    "description": "Definition for a flights dynamic batch data",
+    "type": "object",
+    "properties": {
+        "date": {
+            "description": "Message datetime",
+            "type": "string",
+            "format": "date"
+        },
+        "pitr": {
+            "description": "Message PITR",
+            "type": "string",
+            "format": "date"
+        },
+        "id": {
+            "description": "Flight unique identifier",
+            "type": "string"
+        },
+        "callsign_icao": {
+            "description": "ICAO callsign",
+            "type": "string"
+        },
+        "lat_deg": {
+            "description": "Latitude in degrees at message datetime",
+            "type": "number"
+        },
+        "lon_deg": {
+            "description": "Longitude in degrees at message datetime",
+            "type": "number"
+        },
+        "alt_ft": {
+            "description": "Altitude in feet",
+            "type": "integer"
+        },
+        "proj_date": {
+            "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
+            "type": "integer"
+        },
+        "proj_lat_deg": {
+            "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
+            "type": "number"
+        },
+        "proj_lon_deg": {
+            "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
+            "type": "number"
+        },
+        "proj_alt_ft": {
+            "description": "Altitude at 6 seconds projection in order to facilitate interpolations",
+            "type": "number"
+        },
+        "nav_alt_ft": {
+            "description": "Target altitude Mode-S",
+            "type": "integer"
+        },
+        "track_deg": {
+            "description": "Aircraft's heading. From FlightAware data",
+            "type": "integer"
+        },
+        "gs_kts": {
+            "description": "Groundspeed in knots",
+            "type": "integer"
+        },
+        "id_hexcell": {
+            "description": "H3 hexcell identifier",
+            "type": "string"
+        },
+        "flight_level": {
+            "description": "Flight level as the number of FLXXX",
+            "type": "integer"
+        },
+        "nav_flight_level": {
+            "description": "Target flight level Mode-S",
+            "type": "integer"
+        },
+        "nav_heading_deg": {
+            "description": "Target heading Mode-S",
+            "type": "integer"
+        },
+        "horizontal_status": {
+            "description": "Aircraft horizontal manouvre",
+            "type": "string"
+        },
+        "vertical_status": {
+            "description": "Aircraft vertical manouvre",
+            "type": "string"
+        },
+        "turn_speed_deg_s": {
+            "description": "Turning speed as degrees per second",
+            "type": "integer"
+        },
+        "vertical_speed_ft_min": {
+            "description": "Vertical speed as feet per minute",
+            "type": "integer"
+        },
+        "aprt_departure_icao": {
+            "description": "Departure airport. ICAO format",
+            "type": "string"
+        },
+        "aprt_arrival_icao": {
+            "description": "Arrival airport. ICAO format",
+            "type": "string"
+        },
+        "is_leaving": {
+            "description": "Flag true if the aircraft is leaving the defined area",
+            "type": "boolean"
+        },
+        "date_leaving": {
+            "description": "Expected last datetime after the aircraft leaves te defined area",
+            "type": "integer"
+        },
+        "year": {
+            "description": "Year extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "month": {
+            "description": "Month as number, extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "day": {
+            "description": "Day extracted from date, used as partition column",
+            "type": "integer"
+        },
+        "hour": {
+            "description": "Hour extracted from date, used as partition column",
+            "type": "integer"
+        }
+    }
+}

@@ -1,0 +1,46 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json",
+    "title": "Streaming NCTs",
+    "version": "1.0.0",
+    "description": "Definition of the streaming NCTs data",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "NCT unique identifier",
+            "type": "string"
+        },
+        "id_flight": {
+            "description": "Flight unique identifier",
+            "type": "string"
+        },
+        "id_sector": {
+            "description": "Sector identifier. Null for soft-ncts",
+            "type": "string"
+        },
+        "ref_epoch": {
+            "description": "Reference epoch, extracted from the aircraft position",
+            "type": "integer"
+        },
+        "proj_exit_epoch": {
+            "description": "Projected or sector exit epoch",
+            "type": "integer"
+        },
+        "proj_exit_lat_deg": {
+            "description": "Projected or sector exit latitude in degrees",
+            "type": "number"
+        },
+        "proj_exit_lon_deg": {
+            "description": "Projected or sector exit longitude in degrees",
+            "type": "number"
+        },
+        "proj_exit_alt_ft": {
+            "description": "Projected or sector exit in altitude",
+            "type": "number"
+        },
+        "is_nct": {
+            "description": "Flag for NCT activation and de-activation",
+            "type": "boolean"
+        }
+    }
+}
