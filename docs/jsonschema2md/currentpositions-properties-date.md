@@ -1,14 +1,14 @@
-# Untitled string in Current Positions Schema
+# Untitled string in Streaming Current Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/date
+https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/date
 ```
 
 Message datetime
 
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                      |
-| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [currentPositions.schema.json\*](../../out/currentPositions.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [currentPositions.schema.json\*](../../out/streaming/currentPositions.schema.json "open original schema") |
 
 ## date Type
 

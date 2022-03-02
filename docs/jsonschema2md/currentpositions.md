@@ -1,37 +1,37 @@
-# Current Positions Schema
+# Streaming Current Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json
+https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json
 ```
 
 Definition for current positions caché used for streaming calculations
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                    |
-| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [currentPositions.schema.json](../../out/currentPositions.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                              |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------ |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [currentPositions.schema.json](../../out/streaming/currentPositions.schema.json "open original schema") |
 
-## Current Positions Type
+## Streaming Current Positions Type
 
-`object` ([Current Positions](currentpositions.md))
+`object` ([Streaming Current Positions](currentpositions.md))
 
-# Current Positions Properties
+# Streaming Current Positions Properties
 
-| Property                                           | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                |
-| :------------------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [date](#date)                                      | `string`  | Optional | cannot be null | [Current Positions](currentpositions-properties-date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/date")                                   |
-| [id](#id)                                          | `string`  | Optional | cannot be null | [Current Positions](currentpositions-properties-id.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/id")                                       |
-| [callsign\_icao](#callsign_icao)                   | `string`  | Optional | cannot be null | [Current Positions](currentpositions-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/callsign_icao")                 |
-| [lat\_deg](#lat_deg)                               | `number`  | Optional | cannot be null | [Current Positions](currentpositions-properties-lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/lat_deg")                             |
-| [lon\_deg](#lon_deg)                               | `number`  | Optional | cannot be null | [Current Positions](currentpositions-properties-lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/lon_deg")                             |
-| [alt\_ft](#alt_ft)                                 | `number`  | Optional | cannot be null | [Current Positions](currentpositions-properties-alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/alt_ft")                               |
-| [track\_deg](#track_deg)                           | `number`  | Optional | cannot be null | [Current Positions](currentpositions-properties-track_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/track_deg")                         |
-| [gs\_kts](#gs_kts)                                 | `integer` | Optional | cannot be null | [Current Positions](currentpositions-properties-gs_kts.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/gs_kts")                               |
-| [id\_hexcell](#id_hexcell)                         | `string`  | Optional | cannot be null | [Current Positions](currentpositions-properties-id_hexcell.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/id_hexcell")                       |
-| [vertical\_speed\_ft\_min](#vertical_speed_ft_min) | `integer` | Optional | cannot be null | [Current Positions](currentpositions-properties-vertical_speed_ft_min.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/vertical_speed_ft_min") |
-| [aprt\_departure\_icao](#aprt_departure_icao)      | `string`  | Optional | cannot be null | [Current Positions](currentpositions-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/aprt_departure_icao")     |
-| [aprt\_arrival\_icao](#aprt_arrival_icao)          | `string`  | Optional | cannot be null | [Current Positions](currentpositions-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/aprt_arrival_icao")         |
-| [is\_leaving](#is_leaving)                         | `boolean` | Optional | cannot be null | [Current Positions](currentpositions-properties-is_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/is_leaving")                       |
-| [date\_leaving](#date_leaving)                     | `integer` | Optional | cannot be null | [Current Positions](currentpositions-properties-date_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/date_leaving")                   |
+| Property                                           | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                                    |
+| :------------------------------------------------- | :-------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [date](#date)                                      | `string`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/date")                                   |
+| [id](#id)                                          | `string`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-id.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/id")                                       |
+| [callsign\_icao](#callsign_icao)                   | `string`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/callsign_icao")                 |
+| [lat\_deg](#lat_deg)                               | `number`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/lat_deg")                             |
+| [lon\_deg](#lon_deg)                               | `number`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/lon_deg")                             |
+| [alt\_ft](#alt_ft)                                 | `number`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/alt_ft")                               |
+| [track\_deg](#track_deg)                           | `number`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-track_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/track_deg")                         |
+| [gs\_kts](#gs_kts)                                 | `integer` | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-gs_kts.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/gs_kts")                               |
+| [id\_hexcell](#id_hexcell)                         | `string`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-id_hexcell.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/id_hexcell")                       |
+| [vertical\_speed\_ft\_min](#vertical_speed_ft_min) | `integer` | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-vertical_speed_ft_min.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/vertical_speed_ft_min") |
+| [aprt\_departure\_icao](#aprt_departure_icao)      | `string`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/aprt_departure_icao")     |
+| [aprt\_arrival\_icao](#aprt_arrival_icao)          | `string`  | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/aprt_arrival_icao")         |
+| [is\_leaving](#is_leaving)                         | `boolean` | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-is_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/is_leaving")                       |
+| [date\_leaving](#date_leaving)                     | `integer` | Optional | cannot be null | [Streaming Current Positions](currentpositions-properties-date_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/date_leaving")                   |
 
 ## date
 
@@ -45,7 +45,7 @@ Message datetime
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/date")
+*   defined in: [Streaming Current Positions](currentpositions-properties-date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/date")
 
 ### date Type
 
@@ -67,7 +67,7 @@ Flight unique identifier
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-id.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/id")
+*   defined in: [Streaming Current Positions](currentpositions-properties-id.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/id")
 
 ### id Type
 
@@ -85,7 +85,7 @@ ICAO callsign
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/callsign_icao")
+*   defined in: [Streaming Current Positions](currentpositions-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/callsign_icao")
 
 ### callsign\_icao Type
 
@@ -103,7 +103,7 @@ Latitude in degrees at message datetime
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/lat_deg")
+*   defined in: [Streaming Current Positions](currentpositions-properties-lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/lat_deg")
 
 ### lat\_deg Type
 
@@ -121,7 +121,7 @@ Longitude in degrees at message datetime
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/lon_deg")
+*   defined in: [Streaming Current Positions](currentpositions-properties-lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/lon_deg")
 
 ### lon\_deg Type
 
@@ -139,7 +139,7 @@ Altitude in feet
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/alt_ft")
+*   defined in: [Streaming Current Positions](currentpositions-properties-alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/alt_ft")
 
 ### alt\_ft Type
 
@@ -157,7 +157,7 @@ Aircraft's heading. From FlightAware data
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-track_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/track_deg")
+*   defined in: [Streaming Current Positions](currentpositions-properties-track_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/track_deg")
 
 ### track\_deg Type
 
@@ -175,7 +175,7 @@ Groundspeed in knots
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-gs_kts.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/gs_kts")
+*   defined in: [Streaming Current Positions](currentpositions-properties-gs_kts.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/gs_kts")
 
 ### gs\_kts Type
 
@@ -193,7 +193,7 @@ H3 hexcell identifier
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-id_hexcell.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/id_hexcell")
+*   defined in: [Streaming Current Positions](currentpositions-properties-id_hexcell.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/id_hexcell")
 
 ### id\_hexcell Type
 
@@ -211,7 +211,7 @@ Vertical speed as feet per minute
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-vertical_speed_ft_min.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/vertical_speed_ft_min")
+*   defined in: [Streaming Current Positions](currentpositions-properties-vertical_speed_ft_min.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/vertical_speed_ft_min")
 
 ### vertical\_speed\_ft\_min Type
 
@@ -229,7 +229,7 @@ Departure airport. ICAO format
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/aprt_departure_icao")
+*   defined in: [Streaming Current Positions](currentpositions-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/aprt_departure_icao")
 
 ### aprt\_departure\_icao Type
 
@@ -247,7 +247,7 @@ Arrival airport. ICAO format
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/aprt_arrival_icao")
+*   defined in: [Streaming Current Positions](currentpositions-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/aprt_arrival_icao")
 
 ### aprt\_arrival\_icao Type
 
@@ -265,7 +265,7 @@ Flag true if the aircraft is leaving the defined area
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-is_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/is_leaving")
+*   defined in: [Streaming Current Positions](currentpositions-properties-is_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/is_leaving")
 
 ### is\_leaving Type
 
@@ -283,7 +283,7 @@ Expected last datetime after the aircraft leaves te defined area
 
 *   cannot be null
 
-*   defined in: [Current Positions](currentpositions-properties-date_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/currentPositions.schema.json#/properties/date_leaving")
+*   defined in: [Streaming Current Positions](currentpositions-properties-date_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/date_leaving")
 
 ### date\_leaving Type
 
