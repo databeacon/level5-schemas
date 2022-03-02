@@ -1,0 +1,15 @@
+# Untitled integer in Batch Flights Schema
+
+```txt
+https://github.com/databeacon/level5-schemas/edit/main/schemas/batch/flights.schema.json#/properties/month
+```
+
+Month as number, extracted from date, used as partition column
+
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                          |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [flights.schema.json\*](../../out/batch/flights.schema.json "open original schema") |
+
+## month Type
+
+`integer`

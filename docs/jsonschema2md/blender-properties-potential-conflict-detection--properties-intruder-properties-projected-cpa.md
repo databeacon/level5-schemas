@@ -1,0 +1,77 @@
+# Projected cpa Schema
+
+```txt
+https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa
+```
+
+4D Projected position
+
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [blender.schema.json\*](../../out/streaming/blender.schema.json "open original schema") |
+
+## cpa Type
+
+`object` ([Projected cpa](blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa.md))
+
+# cpa Properties
+
+| Property    | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                                                                   |
+| :---------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [lat](#lat) | `number` | Optional | cannot be null | [Streaming Blender](blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa-properties-lat.md "https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa/properties/lat") |
+| [lng](#lng) | `number` | Optional | cannot be null | [Streaming Blender](blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa-properties-lng.md "https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa/properties/lng") |
+| [alt](#alt) | `number` | Optional | cannot be null | [Streaming Blender](blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa-properties-alt.md "https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa/properties/alt") |
+
+## lat
+
+CPA location.lat when PCD was computed
+
+`lat`
+
+*   is optional
+
+*   Type: `number`
+
+*   cannot be null
+
+*   defined in: [Streaming Blender](blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa-properties-lat.md "https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa/properties/lat")
+
+### lat Type
+
+`number`
+
+## lng
+
+CPA location.lng when PCD was computed
+
+`lng`
+
+*   is optional
+
+*   Type: `number`
+
+*   cannot be null
+
+*   defined in: [Streaming Blender](blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa-properties-lng.md "https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa/properties/lng")
+
+### lng Type
+
+`number`
+
+## alt
+
+Never calculated
+
+`alt`
+
+*   is optional
+
+*   Type: `number`
+
+*   cannot be null
+
+*   defined in: [Streaming Blender](blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa-properties-alt.md "https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa/properties/alt")
+
+### alt Type
+
+`number`
