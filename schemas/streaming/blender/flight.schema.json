@@ -61,7 +61,9 @@
                     "title": "Last trusted position extrapolated 60s ahead of current time",
                     "$ref": "./point4d.schema.json"
                 }
-            }
+            },
+            "additionalProperties": false,
+            "required": ["message", "synced", "projected"]
         },
         "nct": {
             "$ref": "./nct.schema.json"

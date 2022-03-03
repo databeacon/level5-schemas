@@ -58,9 +58,11 @@
                             "$ref": "./point4d.schema.json"
                         }
                     },
+                    "additionalProperties": false,
                     "required": ["cpa", "synced"]
                 }
             },
+            "additionalProperties": false,
             "required": ["id", "points4d"]
         },
         "intruder": {
@@ -84,9 +86,11 @@
                             "$ref": "./point4d.schema.json"
                         }
                     },
+                    "additionalProperties": false,
                     "required": ["cpa", "synced"]
                 }
             },
+            "additionalProperties": false,
             "required": ["id", "points4d"]
         }
     },

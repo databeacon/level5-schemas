@@ -16,5 +16,6 @@
             "items": { "$ref": "./flight.schema.json" }
         }
     },
+    "additionalProperties": false,
     "required": ["epoch", "flights"]
 }

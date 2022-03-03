@@ -23,5 +23,6 @@
             "type": "number"
         }
     },
+    "additionalProperties": false,
     "required": ["epoch", "lat", "lng", "alt"]
 }
