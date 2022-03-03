@@ -1,47 +1,56 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender.schema.json",
-    "title": "Streaming Blender",
+    "$id": "/blender.schema.json",
+    "title": "Blender",
     "version": "1.0.0",
-    "description": "Definition the blender stream",
+    "description": "Asynchronous topics merging.",
     "type": "object",
     "properties": {
         "epoch": {
-            "description": "Sync epoch, i.e., time on which this will be represented on map",
+            "title": "Synched time, POSIX in seconds. ",
             "type": "integer"
         },
         "flights": {
-            "description" : "Represents a single flight",
+            "type": "array",
+            "title": "Flights data",
+            "items": { "$ref": "#/$defs/flight" }
+        }
+    },
+    "required": ["points4d"],
+    "$defs": {
+        "id": {
+            "description": "Unique identifier",
+            "type": "string"
+        },
+        "point4d": {
+            "title": "Point 4D",
+            "description": "A time-space position on earth",
             "type": "object",
-            "title": "Flight",
             "properties": {
-                "id": {
-                    "description": "",
-                    "type": "string"
-                },
                 "epoch": {
-                    "description": "Flight dynamic position epoch from FlightAware",
+                    "title": "Time, POSIX in seconds",
                     "type": "integer"
-                }, 
-                "location": {
-                    "description": "Aircraft 4D position",
-                    "type": "object",
-                    "title": "Location",
-                    "properties": {
-                        "lat": {
-                            "description": "Aircraft position latitude in degrees",
-                            "type": "number"
-                        },
-                        "lng": {
-                            "description": "Aircraft position longitude in degrees",
-                            "type": "number"
-                        },
-                        "alt": {
-                            "description": "Aircraft position altitude in feet",
-                            "type": "integer"
-                        }
-                    }
                 },
+                "lat": {
+                    "description": "Latitude in degrees",
+                    "type": "number"
+                },
+                "lng": {
+                    "description": "Longitude in degrees",
+                    "type": "number"
+                },
+                "alt": {
+                    "description": "Altitude in feet",
+                    "type": "number"
+                }
+            },
+            "required": ["epoch", "lat", "lng", "alt"]
+        },
+        "flight": {
+            "title": "Flight data",
+            "type": "object",
+            "properties": {
+                "id": { "$ref": "#/$def/id" },
                 "gs": {
                     "description": "Aircraft groundspeed in kts",
                     "type": "number"
@@ -50,39 +59,21 @@
                     "description": "Aircraft heading in degrees",
                     "type": "integer"
                 },
-                "turnSpeed": {
-                    "description": "Aircraft turnspeed in kts",
-                    "type": "number"
-                },
-                "horizontalStatus": {
-                    "description": "Aircraft horizontal manouvre type",
-                    "type": "string",
-                    "enum": [ "left",  "right", "cruising" ]
-                },
                 "flightLevel": {
-                    "description": "Flight level as the number of FLXXX",
+                    "description": "Aircraft flight level, eg. FLXXX",
                     "type": "integer"
                 },
                 "selectedAlt": {
                     "description": "Selected altitude in ft",
                     "type": "integer"
-                }, 
-                "selectedFlightLevel": {
-                    "description": "Selected flught level as the number of FLXXX (Mode-S)",
-                    "type": "integer"
                 },
-                "selectedHeading": {
-                    "description": "Selected heading in degrees (Mode-S)",
+                "selectedFlightLevel": {
+                    "description": "Mode-S selected flight level, eg. FLXXX",
                     "type": "integer"
                 },
                 "verticalSpeed": {
                     "description": "Vertical speed as feet per minute",
                     "type": "integer"
-                },
-                "verticalStatus": {
-                    "description": "Aircraft vertical manouvre type",
-                    "type": "string",
-                    "enum": [ "ascending",  "descending", "cruising" ]
                 },
                 "callsign": {
                     "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
@@ -96,335 +87,161 @@
                     "description": "Arrival airport. ICAO format",
                     "type": "integer"
                 },
-                "isLeaving": {
-                    "description": "Flag true if the aircraft is leaving the defined area",
-                    "type": "integer"
-                },
-                "leavingEpoch": {
-                    "description": "Expected last epoch just after the aircraft leaves te defined area",
-                    "type": "integer"
-                },
-                "synced": {
-                    "description": "Synced properties of the Flight object",
+                "points4d": {
+                    "title": "Flight positions",
                     "type": "object",
-                    "title": "Synced Flight",
                     "properties": {
-                        "epoch": {
-                            "description": "Should match position epoch",
-                            "type": "integer"
+                        "message": {
+                            "title": "Last trusted position from source",
+                            "$ref": "#/$defs/point4d"
                         },
-                        "location": {
-                            "description": "Aircraft synced 4D location",
-                            "type": "object",
-                            "title" :"Synced position",
-                            "properties": {
-                                "lat": {
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "type": "number"
-                                }
-                            }
-        
+                        "synced": {
+                            "title": "Last trusted position extrapolated to current time.",
+                            "$ref": "#/$defs/point4d"
                         },
-                        "projection": {
-                            "description": "4D location at 60s ahead of sync epoch",
-                            "type": "object",
-                            "title" : "Position projection",
-                            "properties": {
-                                "lat": {
-                                    "description": "Projection latitude 60s ahead in degrees",
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "description": "Projection longitude 60s ahead in degrees",
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "description": "Projection altitude. Never used",
-                                    "type": "number"
-                                }
-                            }
+                        "projected": {
+                            "title": "Last trusted position extrapolated 60s ahead of current time",
+                            "$ref": "#/$defs/point4d"
                         }
                     }
+                },
+                "nct": {
+                    "$ref": "#/$defs/nct"
+                },
+                "pcds": {
+                    "title": "Potential conflicts detected",
+                    "type": "array",
+                    "items": { "$ref": "#/$defs/pcd" }
                 }
-            }
+            },
+            "required": [
+                "id",
+                "gs",
+                "track",
+                "flightLevel",
+                "selectedAlt",
+                "selectedFlightLevel",
+                "verticalSpeed",
+                "callsign",
+                "aprtDeparture",
+                "aprtArrival",
+                "points4d",
+                "nct",
+                "pcds"
+            ]
         },
         "nct": {
-            "description": "Refers to our mike5-stream NCTs calculation pipeline",
+            "title": "Non-conflicting status",
             "type": "object",
-            "title" : "Non-conflicting flights",
             "properties": {
-                "id": {
-                    "description": "NCT unique identifier",
-                    "type": "string"
-                },
+                "id": { "$ref": "#/$def/id" },
                 "flightId": {
-                    "description": "NCT unique identifier",
+                    "description": "Flight unique identifier",
                     "type": "string"
                 },
                 "sectorId": {
-                    "description": "NCT unique identifier",
+                    "description": "Sector unique identifier",
                     "type": "string"
                 },
-                "anyPcd": {
-                    "description": "NCT unique identifier",
-                    "type": "boolean"
-                }, 
                 "isNct": {
-                    "description": "NCT unique identifier",
+                    "title": "True if the flight is non-conflicting",
                     "type": "boolean"
-                }, 
+                },
                 "mode": {
-                    "description": "NCT unique identifier",
-                    "type": "string",
+                    "title": "Calculation method",
                     "enum": ["acg", "soft"]
-                },  
+                },
                 "showHalo": {
-                    "description": "NCT unique identifier",
+                    "description": "True if flight transitions from non-conflicting to potential conflict",
                     "type": "boolean"
-                }, 
-                "epoch":  {
-                    "description": "Refers to mike5-stream calculation epoch",
+                },
+                "epoch": {
+                    "description": "Calculation time, POSIX in seconds",
                     "type": "integer"
-                }, 
+                },
                 "projExit": {
-                    "description": "Projection for soft-NCTs",
-                    "type": "object",
-                    "title" : "Exit projection",
-                    "properties": {
-                        "epoch": {
-                            "description": "Projection epoch",
-                            "type": "integer"
-                        },
-                        "location": {
-                            "description": "4D Projected position",
-                            "type": "object",
-                            "title" :"Projected position",
-                            "properties": {
-                                "lat": {
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "description": "Never calculated",
-                                    "type": "number"
-                                }
-                            }
-                        }
-                    }
-                },
-                "synced": {
-                    "description": "Nothing to sync yet",
-                    "type": "object",
-                    "title" :"Synced NCT"
+                    "description": "Last projected position estimated to be non-conflicting.",
+                    "$ref": "#/$defs/point4d"
                 }
-            }
+            },
+            "required": ["id", "flightId", "sectorId", "isNct", "mode", "showHalo", "epoch", "projExit"]
         },
-        "pcds": {
-            "description": "Refers to our mike5-stream PCDs calculation pipeline",
+        "pcd": {
+            "title": "Potential conflict detected",
             "type": "object",
-            "title" :"Potential conflict detection ",
             "properties": {
-                "id": {
-                    "description": "PCD unique identifier", 
-                    "type": "string"
-                },
+                "id": { "$ref": "#/$def/id" },
                 "isFirst": {
-                    "description": "Flag indicating if aircraft is crossing first", 
+                    "title": "Flag true if ownship crosses first",
                     "type": "boolean"
                 },
                 "segEpoch": {
-                    "description": "Crossing time in epochs", 
-                    "type": "number"
-                },
-                "segDist":  {
-                    "description": "Crossing distance in NM", 
-                    "type": "number"
-                },
-                "isPcd":  {
-                    "description": "PCD activation or de-activation flag", 
-                    "type": "boolean"
-                },
-                "epoch":  {
-                    "description": "Refers to mike5-stream calculation epoch", 
+                    "title": "Time to CPA, POSIX in seconds",
                     "type": "integer"
                 },
-                "currentDist":  {
-                    "description": "Current distance between conflicting aircrafts in NM", 
+                "segDist": {
+                    "title": "Distance at CPA in NM",
+                    "type": "number"
+                },
+                "isPcd": {
+                    "title": "Flag true if and only if pcd is a potential conflict",
+                    "type": "boolean"
+                },
+                "mode": {
+                    "type": "Calculation mode",
+                    "enum": ["enhanced", "horizontal"]
+                },
+                "epoch": {
+                    "title": "Calculation time, POSIX in seconds",
+                    "type": "integer"
+                },
+                "currentDist": {
+                    "title": "Current aircraft distance in NM",
                     "type": "number"
                 },
                 "ownship": {
-                    "description": "Ownship position and CPA", 
-                    "type": "object", 
-                    "title" :"Ownship",
-                    "properties": {
-                        "id": {
-                            "type": "string"
-                        },
-                        "location": {
-                            "description": "4D Projected position",
-                            "type": "object",
-                            "title" :"Projected position",
-                            "properties": {
-                                "lat": {
-                                    "description": "flight location.lat when PCD was computed",
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "description": "flight location.lng when PCD was computed",
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "description": "Never calculated",
-                                    "type": "number"
-                                }
-                            }
-                        },
-                        "cpa": {
-                            "description": "4D Projected position",
-                            "type": "object",
-                            "title" :"Projected position",
-                            "properties": {
-                                "lat": {
-                                    "description": "CPA location.lat when PCD was computed",
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "description": "CPA location.lng when PCD was computed",
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "description": "Never calculated",
-                                    "type": "number"
-                                }
-                            }
-                        }
-                    }
+                    "title": "Ownship flight",
+                    "$ref": "#/$def/pcdFlightSyncedInfo"
                 },
                 "intruder": {
-                    "description": "Intruder position and CPA", 
-                    "type": "object",
-                    "title" :"Intruder", 
-                    "properties": {
-                        "id": {
-                            "type": "string"
-                        },
-                        "location": {
-                            "description": "4D Projected position",
-                            "type": "object",
-                            "title" :"Projected position",
-                            "properties": {
-                                "lat": {
-                                    "description": "flight location.lat when PCD was computed",
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "description": "flight location.lng when PCD was computed",
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "description": "Never calculated",
-                                    "type": "number"
-                                }
-                            }
-                        },
-                        "cpa": {
-                            "description": "4D Projected position",
-                            "type": "object",
-                             "title" :"Projected cpa",
-                            "properties": {
-                                "lat": {
-                                    "description": "CPA location.lat when PCD was computed",
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "description": "CPA location.lng when PCD was computed",
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "description": "Never calculated",
-                                    "type": "number"
-                                }
-                            }
-                        }
-                    }
-                },
-                "synced": {
-                    "epoch": {
-                        "description": "Should match sync root epoch",
-                        "type": "integer"
-                    },
-                    "currentDist":  {
-                        "description": "", 
-                        "type": "number"
-                    },
-                    "ownship": {
-                        "id": {
-                            "description": "Intruder identifier",
-                            "type": "string"
-                        },
-                        "location": {
-                            "description": "4D Projected position",
-                            "type": "object",
-                             "title" :"Projected position",
-                            "properties": {
-                                "lat": {
-                                    "description": "CPA location.lat when PCD was computed",
-                                    "type": "number"
-                                },
-                                "lng": {
-                                    "description": "CPA location.lng when PCD was computed",
-                                    "type": "number"
-                                },
-                                "alt": {
-                                    "description": "Never calculated",
-                                    "type": "number"
-                                }
-                            }
-                        }
-                    },
-                    "intruder": {
-                        "description": "Intruder position and CPA", 
-                        "type": "object",
-                        "title" :"Intruder", 
-                        "properties": {
-                            "id": {
-                                "type": "string"
-                            },
-                            "location": {
-                                "description": "4D Projected position",
-                                "type": "object",
-                                "title" :"Projected position",
-                                "properties": {
-                                    "lat": {
-                                        "description": "flight location.lat when PCD was computed",
-                                        "type": "number"
-                                    },
-                                    "lng": {
-                                        "description": "flight location.lng when PCD was computed",
-                                        "type": "number"
-                                    },
-                                    "alt": {
-                                        "description": "Never calculated",
-                                        "type": "number"
-                                    }
-                                }
-                            }
-                        }
-                    }
+                    "title": "Intruder flight",
+                    "$ref": "#/$defs/pcdFlightSyncedInfo"
                 }
-            }
+            },
+            "required": [
+                "id",
+                "isFirst",
+                "segEpoch",
+                "segDist",
+                "isPcd",
+                "mode",
+                "epoch",
+                "currentDist",
+                "ownship",
+                "intruder"
+            ]
+        },
+        "pcdFlightSyncedInfo": {
+            "type": "object",
+            "properties": {
+                "id": { "$ref": "#/$def/id" },
+                "points4d": {
+                    "title": "Flight positions",
+                    "type": "object",
+                    "properties": {
+                        "cpa": {
+                            "title": "Closes point of approach",
+                            "$ref": "#/$defs/point4d"
+                        },
+                        "synced": {
+                            "title": "Last trusted position extrapolated to current time.",
+                            "$ref": "#/$defs/point4d"
+                        }
+                    },
+                    "required": ["cpa", "synced"]
+                }
+            },
+            "required": ["id", "points4d"]
         }
     }
 }
-
-
-
-
-
