@@ -13,7 +13,7 @@
         "flights": {
             "type": "array",
             "title": "Flights data",
-            "items": { "$ref": "/level5-schemas/main/schemas/streaming/blender/flight.schema.json" }
+            "items": { "$ref": "./flight.schema.json" }
         }
     },
     "required": ["epoch", "flights"]

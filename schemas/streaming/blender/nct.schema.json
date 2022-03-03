@@ -35,7 +35,7 @@
         },
         "projExit": {
             "description": "Last projected position estimated to be non-conflicting.",
-            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
+            "$ref": "./point4d.schema.json"
         }
     },
     "required": ["id", "flightId", "sectorId", "isNct", "mode", "showHalo", "epoch", "projExit"]
