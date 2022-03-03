@@ -16,5 +16,5 @@
             "items": { "$ref": "/level5-schemas/main/schemas/streaming/blender/flight.schema.json" }
         }
     },
-    "required": ["points4d"]
+    "required": ["epoch", "flights"]
 }
