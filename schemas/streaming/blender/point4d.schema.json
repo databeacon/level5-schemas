@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/common/geometry/point4d.schema.json",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/point4d.schema.json",
     "version": "1.0.0",
     "title": "Point 4D",
     "description": "A time-space position on earth",

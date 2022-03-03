@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/schemas/streaming/blender/flight.schema.json",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/flight.schema.json",
     "version": "1.0.0",
     "title": "Flight data",
     "type": "object",
@@ -51,25 +51,25 @@
             "properties": {
                 "message": {
                     "title": "Last trusted position from source",
-                    "$ref": "./point4d.schema.json"
+                    "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
                 },
                 "synced": {
                     "title": "Last trusted position extrapolated to current time.",
-                    "$ref": "./point4d.schema.json"
+                    "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
                 },
                 "projected": {
                     "title": "Last trusted position extrapolated 60s ahead of current time",
-                    "$ref": "./point4d.schema.json"
+                    "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
                 }
             }
         },
         "nct": {
-            "$ref": "./nct.schema.json"
+            "$ref": "/level5-schemas/main/schemas/streaming/blender/nct.schema.json"
         },
         "pcds": {
             "title": "Potential conflicts detected",
             "type": "array",
-            "items": { "$ref": "./pcd.schema.json" }
+            "items": { "$ref": "/level5-schemas/main/schemas/streaming/blender/pcd.schema.json" }
         }
     },
     "required": [

@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "/schemas/streaming/blender/pcd.schema.json",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/pcd.schema.json",
     "version": "1.0.0",
     "title": "Potential conflict",
     "type": "object",
@@ -51,11 +51,11 @@
                     "properties": {
                         "cpa": {
                             "title": "Closes point of approach",
-                            "$ref": "./point4d.schema.json"
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
                         },
                         "synced": {
                             "title": "Last trusted position extrapolated to current time.",
-                            "$ref": "./point4d.schema.json"
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
                         }
                     },
                     "required": ["cpa", "synced"]
@@ -77,11 +77,11 @@
                     "properties": {
                         "cpa": {
                             "title": "Closes point of approach",
-                            "$ref": "./point4d.schema.json"
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
                         },
                         "synced": {
                             "title": "Last trusted position extrapolated to current time.",
-                            "$ref": "./point4d.schema.json"
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
                         }
                     },
                     "required": ["cpa", "synced"]
