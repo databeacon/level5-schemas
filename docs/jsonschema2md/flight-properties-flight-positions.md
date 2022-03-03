@@ -8,7 +8,7 @@ https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streami
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                    |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [flight.schema.json\*](../../out/streaming/blender/flight.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [flight.schema.json\*](../../out/streaming/blender/flight.schema.json "open original schema") |
 
 ## points4d Type
 
@@ -18,9 +18,9 @@ https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streami
 
 | Property                | Type     | Required | Nullable       | Defined by                                                                                                                                                                           |
 | :---------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [message](#message)     | `object` | Optional | cannot be null | [Flight data](point4d.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/point4d.schema.json#/properties/points4d/properties/message")   |
-| [synced](#synced)       | `object` | Optional | cannot be null | [Flight data](point4d.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/point4d.schema.json#/properties/points4d/properties/synced")    |
-| [projected](#projected) | `object` | Optional | cannot be null | [Flight data](point4d.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/point4d.schema.json#/properties/points4d/properties/projected") |
+| [message](#message)     | `object` | Required | cannot be null | [Flight data](point4d.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/point4d.schema.json#/properties/points4d/properties/message")   |
+| [synced](#synced)       | `object` | Required | cannot be null | [Flight data](point4d.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/point4d.schema.json#/properties/points4d/properties/synced")    |
+| [projected](#projected) | `object` | Required | cannot be null | [Flight data](point4d.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/point4d.schema.json#/properties/points4d/properties/projected") |
 
 ## message
 
@@ -28,7 +28,7 @@ A time-space position on earth
 
 `message`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([Point 4D](point4d.md))
 
@@ -46,7 +46,7 @@ A time-space position on earth
 
 `synced`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([Point 4D](point4d.md))
 
@@ -64,7 +64,7 @@ A time-space position on earth
 
 `projected`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([Point 4D](point4d.md))
 

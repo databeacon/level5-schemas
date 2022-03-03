@@ -8,7 +8,7 @@ A time-space position on earth
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                    |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [point4d.schema.json](../../out/streaming/blender/point4d.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [point4d.schema.json](../../out/streaming/blender/point4d.schema.json "open original schema") |
 
 ## Point 4D Type
 

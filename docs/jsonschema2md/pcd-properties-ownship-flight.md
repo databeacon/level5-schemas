@@ -8,7 +8,7 @@ https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streami
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [pcd.schema.json\*](../../out/streaming/blender/pcd.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [pcd.schema.json\*](../../out/streaming/blender/pcd.schema.json "open original schema") |
 
 ## ownship Type
 
