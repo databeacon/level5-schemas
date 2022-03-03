@@ -1,0 +1,94 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/blender/pcd.schema.json",
+    "version": "1.0.0",
+    "title": "Potential conflict",
+    "type": "object",
+    "properties": {
+        "id": {
+            "description": "Nct unique identifier",
+            "type": "string"
+        },
+        "isFirst": {
+            "title": "Flag true if ownship crosses first",
+            "type": "boolean"
+        },
+        "segEpoch": {
+            "title": "Time to CPA, POSIX in seconds",
+            "type": "integer"
+        },
+        "segDist": {
+            "title": "Distance at CPA in NM",
+            "type": "number"
+        },
+        "isPcd": {
+            "title": "Flag true if and only if pcd is a potential conflict",
+            "type": "boolean"
+        },
+        "mode": {
+            "type": "Calculation mode",
+            "enum": ["enhanced", "horizontal"]
+        },
+        "epoch": {
+            "title": "Calculation time, POSIX in seconds",
+            "type": "integer"
+        },
+        "currentDist": {
+            "title": "Current aircraft distance in NM",
+            "type": "number"
+        },
+        "ownship": {
+            "title": "Ownship flight",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "Flight unique identifier",
+                    "type": "string"
+                },
+                "points4d": {
+                    "title": "Flight positions",
+                    "type": "object",
+                    "properties": {
+                        "cpa": {
+                            "title": "Closes point of approach",
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
+                        },
+                        "synced": {
+                            "title": "Last trusted position extrapolated to current time.",
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
+                        }
+                    },
+                    "required": ["cpa", "synced"]
+                }
+            },
+            "required": ["id", "points4d"]
+        },
+        "intruder": {
+            "title": "Intruder flight",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "Flight unique identifier",
+                    "type": "string"
+                },
+                "points4d": {
+                    "title": "Flight positions",
+                    "type": "object",
+                    "properties": {
+                        "cpa": {
+                            "title": "Closes point of approach",
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
+                        },
+                        "synced": {
+                            "title": "Last trusted position extrapolated to current time.",
+                            "$ref": "/level5-schemas/main/schemas/streaming/blender/point4d.schema.json"
+                        }
+                    },
+                    "required": ["cpa", "synced"]
+                }
+            },
+            "required": ["id", "points4d"]
+        }
+    },
+    "required": ["id", "isFirst", "segEpoch", "segDist", "isPcd", "mode", "epoch", "currentDist", "ownship", "intruder"]
+}
