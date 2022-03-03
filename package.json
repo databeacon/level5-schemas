@@ -19,6 +19,7 @@
   "homepage": "https://github.com/databeacon/level5-schemas#readme",
   "devDependencies": {
     "@adobe/jsonschema2md": "^7.0.0",
+    "json-schema-to-typescript": "^10.1.5",
     "wetzel": "^0.2.3"
   }
 }

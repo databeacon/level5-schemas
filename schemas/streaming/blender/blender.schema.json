@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "/schemas/streaming/blender/blender.schema.json",
+    "title": "Blender",
+    "version": "1.0.0",
+    "description": "Asynchronous topics merging.",
+    "type": "object",
+    "properties": {
+        "epoch": {
+            "title": "Synched time, POSIX in seconds. ",
+            "type": "integer"
+        },
+        "flights": {
+            "type": "array",
+            "title": "Flights data",
+            "items": { "$ref": "./flight.schema.json" }
+        }
+    },
+    "required": ["points4d"]
+}
