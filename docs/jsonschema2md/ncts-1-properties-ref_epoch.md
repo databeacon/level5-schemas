@@ -1,10 +1,10 @@
 # Untitled integer in Streaming NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/ref_epoch
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/ref_epoch
 ```
 
-The tail number or registration of the aircraft, if known and it differs from the ident
+Reference epoch, extracted from the aircraft position
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |

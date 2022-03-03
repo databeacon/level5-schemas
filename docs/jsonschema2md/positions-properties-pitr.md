@@ -1,7 +1,7 @@
 # Untitled integer in Firehose Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/pitr
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/pitr
 ```
 
 Point in time recovery

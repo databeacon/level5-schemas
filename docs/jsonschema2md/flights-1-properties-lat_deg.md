@@ -1,7 +1,7 @@
 # Untitled number in Streaming Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/lat_deg
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/lat_deg
 ```
 
 Latitude in degrees at message datetime

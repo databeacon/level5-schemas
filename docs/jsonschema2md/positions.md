@@ -1,7 +1,7 @@
 # Firehose Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json
 ```
 
 Definition for a firehose positions data
@@ -16,20 +16,20 @@ Definition for a firehose positions data
 
 # Firehose Positions Properties
 
-| Property                       | Type      | Required | Nullable       | Defined by                                                                                                                                                                |
-| :----------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [clock](#clock)                | `integer` | Required | cannot be null | [Firehose Positions](positions-properties-clock.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/clock")               |
-| [pitr](#pitr)                  | `integer` | Required | cannot be null | [Firehose Positions](positions-properties-pitr.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/pitr")                 |
-| [id](#id)                      | `string`  | Required | cannot be null | [Firehose Positions](positions-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/id")                     |
-| [ident](#ident)                | `string`  | Required | cannot be null | [Firehose Positions](positions-properties-ident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/ident")               |
-| [atcident](#atcident)          | `string`  | Optional | cannot be null | [Firehose Positions](positions-properties-atcident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/atcident")         |
-| [lat](#lat)                    | `number`  | Required | cannot be null | [Firehose Positions](positions-properties-lat.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/lat")                   |
-| [lon](#lon)                    | `number`  | Required | cannot be null | [Firehose Positions](positions-properties-lon.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/lon")                   |
-| [alt](#alt)                    | `number`  | Optional | cannot be null | [Firehose Positions](positions-properties-alt.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/alt")                   |
-| [nav\_altitude](#nav_altitude) | `number`  | Optional | cannot be null | [Firehose Positions](positions-properties-nav_altitude.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/nav_altitude") |
-| [nav\_heading](#nav_heading)   | `number`  | Optional | cannot be null | [Firehose Positions](positions-properties-nav_heading.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/nav_heading")   |
-| [heading](#heading)            | `integer` | Optional | cannot be null | [Firehose Positions](positions-properties-heading.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/heading")           |
-| [vertRate](#vertrate)          | `integer` | Optional | cannot be null | [Firehose Positions](positions-properties-vertrate.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/vertRate")         |
+| Property                       | Type      | Required | Nullable       | Defined by                                                                                                                                                                                    |
+| :----------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [clock](#clock)                | `integer` | Required | cannot be null | [Firehose Positions](positions-properties-clock.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/clock")               |
+| [pitr](#pitr)                  | `integer` | Required | cannot be null | [Firehose Positions](positions-properties-pitr.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/pitr")                 |
+| [id](#id)                      | `string`  | Required | cannot be null | [Firehose Positions](positions-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/id")                     |
+| [ident](#ident)                | `string`  | Required | cannot be null | [Firehose Positions](positions-properties-ident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/ident")               |
+| [atcident](#atcident)          | `string`  | Optional | cannot be null | [Firehose Positions](positions-properties-atcident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/atcident")         |
+| [lat](#lat)                    | `number`  | Required | cannot be null | [Firehose Positions](positions-properties-lat.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/lat")                   |
+| [lon](#lon)                    | `number`  | Required | cannot be null | [Firehose Positions](positions-properties-lon.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/lon")                   |
+| [alt](#alt)                    | `number`  | Optional | cannot be null | [Firehose Positions](positions-properties-alt.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/alt")                   |
+| [nav\_altitude](#nav_altitude) | `number`  | Optional | cannot be null | [Firehose Positions](positions-properties-nav_altitude.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/nav_altitude") |
+| [nav\_heading](#nav_heading)   | `number`  | Optional | cannot be null | [Firehose Positions](positions-properties-nav_heading.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/nav_heading")   |
+| [heading](#heading)            | `integer` | Optional | cannot be null | [Firehose Positions](positions-properties-heading.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/heading")           |
+| [vertRate](#vertrate)          | `integer` | Optional | cannot be null | [Firehose Positions](positions-properties-vertrate.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/vertRate")         |
 
 ## clock
 
@@ -43,7 +43,7 @@ Report time. POSIX epoch format. Time should be the time generated by flight har
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-clock.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/clock")
+*   defined in: [Firehose Positions](positions-properties-clock.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/clock")
 
 ### clock Type
 
@@ -61,7 +61,7 @@ Point in time recovery
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-pitr.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/pitr")
+*   defined in: [Firehose Positions](positions-properties-pitr.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/pitr")
 
 ### pitr Type
 
@@ -79,7 +79,7 @@ FlightAware flight id
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/id")
+*   defined in: [Firehose Positions](positions-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/id")
 
 ### id Type
 
@@ -97,7 +97,7 @@ Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketin
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-ident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/ident")
+*   defined in: [Firehose Positions](positions-properties-ident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/ident")
 
 ### ident Type
 
@@ -115,7 +115,7 @@ Identifier used for ATC, if it differs from flight identifier
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-atcident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/atcident")
+*   defined in: [Firehose Positions](positions-properties-atcident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/atcident")
 
 ### atcident Type
 
@@ -133,7 +133,7 @@ Latitude in decimal degrees, rounded to 5 decimal points
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-lat.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/lat")
+*   defined in: [Firehose Positions](positions-properties-lat.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/lat")
 
 ### lat Type
 
@@ -151,7 +151,7 @@ Longitude in decimal degrees, rounded to 5 decimal points
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-lon.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/lon")
+*   defined in: [Firehose Positions](positions-properties-lon.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/lon")
 
 ### lon Type
 
@@ -169,7 +169,7 @@ Altitude in feet (MSL)
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-alt.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/alt")
+*   defined in: [Firehose Positions](positions-properties-alt.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/alt")
 
 ### alt Type
 
@@ -187,7 +187,7 @@ The altitude setting, in feet, from the navigation equipment (Mode-S)
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-nav_altitude.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/nav_altitude")
+*   defined in: [Firehose Positions](positions-properties-nav_altitude.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/nav_altitude")
 
 ### nav\_altitude Type
 
@@ -205,7 +205,7 @@ The heading, in degrees, from the navigation equipment (Mode-S)
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-nav_heading.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/nav_heading")
+*   defined in: [Firehose Positions](positions-properties-nav_heading.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/nav_heading")
 
 ### nav\_heading Type
 
@@ -223,7 +223,7 @@ Course in degrees
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-heading.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/heading")
+*   defined in: [Firehose Positions](positions-properties-heading.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/heading")
 
 ### heading Type
 
@@ -241,7 +241,7 @@ The aircraft's vertical rate of climb/descent derived from pressure altitude, re
 
 *   cannot be null
 
-*   defined in: [Firehose Positions](positions-properties-vertrate.md "https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/vertRate")
+*   defined in: [Firehose Positions](positions-properties-vertrate.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/vertRate")
 
 ### vertRate Type
 

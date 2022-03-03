@@ -1,7 +1,7 @@
 # Untitled boolean in Streaming Current Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/is_leaving
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/currentPositions.schema.json#/properties/is_leaving
 ```
 
 Flag true if the aircraft is leaving the defined area

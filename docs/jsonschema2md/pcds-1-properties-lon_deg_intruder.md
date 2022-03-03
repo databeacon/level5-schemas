@@ -1,7 +1,7 @@
 # Untitled number in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lon_deg_intruder
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lon_deg_intruder
 ```
 
 Longitude at 6 seconds projection in order to facilitate interpolations

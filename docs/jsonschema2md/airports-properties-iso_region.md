@@ -1,7 +1,7 @@
-# Untitled string in Streaming FLIFO Schema
+# Untitled string in Airports Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/iso_region
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/iso_region
 ```
 
 Airport location ISO region identifier

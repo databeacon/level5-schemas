@@ -1,7 +1,7 @@
 # Untitled number in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/is_ownship_first
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/is_ownship_first
 ```
 
 Flag indicating which aircraft is crossing first

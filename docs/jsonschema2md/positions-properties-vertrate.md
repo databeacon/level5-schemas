@@ -1,7 +1,7 @@
 # Untitled integer in Firehose Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/vertRate
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/vertRate
 ```
 
 The aircraft's vertical rate of climb/descent derived from pressure altitude, reported in feet per minute. (version 21.0+)

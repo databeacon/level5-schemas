@@ -1,7 +1,7 @@
 # Streaming Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json
 ```
 
 Definition for a flights dynamic data
@@ -16,34 +16,34 @@ Definition for a flights dynamic data
 
 # Streaming Flights Properties
 
-| Property                                           | Type      | Required | Nullable       | Defined by                                                                                                                                                                                          |
-| :------------------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [date](#date)                                      | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/date")                                   |
-| [pitr](#pitr)                                      | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-pitr.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/pitr")                                   |
-| [id](#id)                                          | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-id.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/id")                                       |
-| [callsign\_icao](#callsign_icao)                   | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/callsign_icao")                 |
-| [lat\_deg](#lat_deg)                               | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/lat_deg")                             |
-| [lon\_deg](#lon_deg)                               | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/lon_deg")                             |
-| [alt\_ft](#alt_ft)                                 | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/alt_ft")                               |
-| [proj\_date](#proj_date)                           | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_date")                         |
-| [proj\_lat\_deg](#proj_lat_deg)                    | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_lat_deg")                   |
-| [proj\_lon\_deg](#proj_lon_deg)                    | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_lon_deg")                   |
-| [proj\_alt\_ft](#proj_alt_ft)                      | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_alt_ft")                     |
-| [nav\_alt\_ft](#nav_alt_ft)                        | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-nav_alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/nav_alt_ft")                       |
-| [track\_deg](#track_deg)                           | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-track_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/track_deg")                         |
-| [gs\_kts](#gs_kts)                                 | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-gs_kts.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/gs_kts")                               |
-| [id\_hexcell](#id_hexcell)                         | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-id_hexcell.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/id_hexcell")                       |
-| [flight\_level](#flight_level)                     | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-flight_level.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/flight_level")                   |
-| [nav\_flight\_level](#nav_flight_level)            | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-nav_flight_level.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/nav_flight_level")           |
-| [nav\_heading\_deg](#nav_heading_deg)              | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-nav_heading_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/nav_heading_deg")             |
-| [horizontal\_status](#horizontal_status)           | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-horizontal_status.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/horizontal_status")         |
-| [vertical\_status](#vertical_status)               | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-vertical_status.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/vertical_status")             |
-| [turn\_speed\_deg\_s](#turn_speed_deg_s)           | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-turn_speed_deg_s.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/turn_speed_deg_s")           |
-| [vertical\_speed\_ft\_min](#vertical_speed_ft_min) | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-vertical_speed_ft_min.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/vertical_speed_ft_min") |
-| [aprt\_departure\_icao](#aprt_departure_icao)      | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/aprt_departure_icao")     |
-| [aprt\_arrival\_icao](#aprt_arrival_icao)          | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/aprt_arrival_icao")         |
-| [is\_leaving](#is_leaving)                         | `boolean` | Optional | cannot be null | [Streaming Flights](flights-1-properties-is_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/is_leaving")                       |
-| [date\_leaving](#date_leaving)                     | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-date_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/date_leaving")                   |
+| Property                                           | Type      | Required | Nullable       | Defined by                                                                                                                                                                                                    |
+| :------------------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [date](#date)                                      | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-date.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/date")                                   |
+| [pitr](#pitr)                                      | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-pitr.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/pitr")                                   |
+| [id](#id)                                          | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/id")                                       |
+| [callsign\_icao](#callsign_icao)                   | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-callsign_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/callsign_icao")                 |
+| [lat\_deg](#lat_deg)                               | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/lat_deg")                             |
+| [lon\_deg](#lon_deg)                               | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/lon_deg")                             |
+| [alt\_ft](#alt_ft)                                 | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/alt_ft")                               |
+| [proj\_date](#proj_date)                           | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_date.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_date")                         |
+| [proj\_lat\_deg](#proj_lat_deg)                    | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_lat_deg")                   |
+| [proj\_lon\_deg](#proj_lon_deg)                    | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_lon_deg")                   |
+| [proj\_alt\_ft](#proj_alt_ft)                      | `number`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-proj_alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_alt_ft")                     |
+| [nav\_alt\_ft](#nav_alt_ft)                        | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-nav_alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/nav_alt_ft")                       |
+| [track\_deg](#track_deg)                           | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-track_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/track_deg")                         |
+| [gs\_kts](#gs_kts)                                 | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-gs_kts.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/gs_kts")                               |
+| [id\_hexcell](#id_hexcell)                         | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-id_hexcell.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/id_hexcell")                       |
+| [flight\_level](#flight_level)                     | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-flight_level.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/flight_level")                   |
+| [nav\_flight\_level](#nav_flight_level)            | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-nav_flight_level.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/nav_flight_level")           |
+| [nav\_heading\_deg](#nav_heading_deg)              | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-nav_heading_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/nav_heading_deg")             |
+| [horizontal\_status](#horizontal_status)           | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-horizontal_status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/horizontal_status")         |
+| [vertical\_status](#vertical_status)               | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-vertical_status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/vertical_status")             |
+| [turn\_speed\_deg\_s](#turn_speed_deg_s)           | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-turn_speed_deg_s.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/turn_speed_deg_s")           |
+| [vertical\_speed\_ft\_min](#vertical_speed_ft_min) | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-vertical_speed_ft_min.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/vertical_speed_ft_min") |
+| [aprt\_departure\_icao](#aprt_departure_icao)      | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-aprt_departure_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/aprt_departure_icao")     |
+| [aprt\_arrival\_icao](#aprt_arrival_icao)          | `string`  | Optional | cannot be null | [Streaming Flights](flights-1-properties-aprt_arrival_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/aprt_arrival_icao")         |
+| [is\_leaving](#is_leaving)                         | `boolean` | Optional | cannot be null | [Streaming Flights](flights-1-properties-is_leaving.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/is_leaving")                       |
+| [date\_leaving](#date_leaving)                     | `integer` | Optional | cannot be null | [Streaming Flights](flights-1-properties-date_leaving.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/date_leaving")                   |
 
 ## date
 
@@ -57,7 +57,7 @@ Message datetime
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/date")
+*   defined in: [Streaming Flights](flights-1-properties-date.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/date")
 
 ### date Type
 
@@ -79,7 +79,7 @@ Message PITR
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-pitr.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/pitr")
+*   defined in: [Streaming Flights](flights-1-properties-pitr.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/pitr")
 
 ### pitr Type
 
@@ -101,7 +101,7 @@ Flight unique identifier
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-id.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/id")
+*   defined in: [Streaming Flights](flights-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/id")
 
 ### id Type
 
@@ -119,7 +119,7 @@ ICAO callsign
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/callsign_icao")
+*   defined in: [Streaming Flights](flights-1-properties-callsign_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/callsign_icao")
 
 ### callsign\_icao Type
 
@@ -137,7 +137,7 @@ Latitude in degrees at message datetime
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/lat_deg")
+*   defined in: [Streaming Flights](flights-1-properties-lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/lat_deg")
 
 ### lat\_deg Type
 
@@ -155,7 +155,7 @@ Longitude in degrees at message datetime
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/lon_deg")
+*   defined in: [Streaming Flights](flights-1-properties-lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/lon_deg")
 
 ### lon\_deg Type
 
@@ -173,7 +173,7 @@ Altitude in feet
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/alt_ft")
+*   defined in: [Streaming Flights](flights-1-properties-alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/alt_ft")
 
 ### alt\_ft Type
 
@@ -191,7 +191,7 @@ Datetime at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-proj_date.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_date")
+*   defined in: [Streaming Flights](flights-1-properties-proj_date.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_date")
 
 ### proj\_date Type
 
@@ -209,7 +209,7 @@ Latitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-proj_lat_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_lat_deg")
+*   defined in: [Streaming Flights](flights-1-properties-proj_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_lat_deg")
 
 ### proj\_lat\_deg Type
 
@@ -227,7 +227,7 @@ Longitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-proj_lon_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_lon_deg")
+*   defined in: [Streaming Flights](flights-1-properties-proj_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_lon_deg")
 
 ### proj\_lon\_deg Type
 
@@ -245,7 +245,7 @@ Altitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-proj_alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/proj_alt_ft")
+*   defined in: [Streaming Flights](flights-1-properties-proj_alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/proj_alt_ft")
 
 ### proj\_alt\_ft Type
 
@@ -263,7 +263,7 @@ Target altitude Mode-S
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-nav_alt_ft.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/nav_alt_ft")
+*   defined in: [Streaming Flights](flights-1-properties-nav_alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/nav_alt_ft")
 
 ### nav\_alt\_ft Type
 
@@ -281,7 +281,7 @@ Aircraft's heading. From FlightAware data
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-track_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/track_deg")
+*   defined in: [Streaming Flights](flights-1-properties-track_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/track_deg")
 
 ### track\_deg Type
 
@@ -299,7 +299,7 @@ Groundspeed in knots
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-gs_kts.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/gs_kts")
+*   defined in: [Streaming Flights](flights-1-properties-gs_kts.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/gs_kts")
 
 ### gs\_kts Type
 
@@ -317,7 +317,7 @@ H3 hexcell identifier
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-id_hexcell.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/id_hexcell")
+*   defined in: [Streaming Flights](flights-1-properties-id_hexcell.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/id_hexcell")
 
 ### id\_hexcell Type
 
@@ -335,7 +335,7 @@ Flight level as the number of FLXXX
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-flight_level.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/flight_level")
+*   defined in: [Streaming Flights](flights-1-properties-flight_level.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/flight_level")
 
 ### flight\_level Type
 
@@ -353,7 +353,7 @@ Target flight level Mode-S
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-nav_flight_level.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/nav_flight_level")
+*   defined in: [Streaming Flights](flights-1-properties-nav_flight_level.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/nav_flight_level")
 
 ### nav\_flight\_level Type
 
@@ -371,7 +371,7 @@ Target heading Mode-S
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-nav_heading_deg.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/nav_heading_deg")
+*   defined in: [Streaming Flights](flights-1-properties-nav_heading_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/nav_heading_deg")
 
 ### nav\_heading\_deg Type
 
@@ -389,7 +389,7 @@ Aircraft horizontal manouvre
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-horizontal_status.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/horizontal_status")
+*   defined in: [Streaming Flights](flights-1-properties-horizontal_status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/horizontal_status")
 
 ### horizontal\_status Type
 
@@ -407,7 +407,7 @@ Aircraft vertical manouvre
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-vertical_status.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/vertical_status")
+*   defined in: [Streaming Flights](flights-1-properties-vertical_status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/vertical_status")
 
 ### vertical\_status Type
 
@@ -425,7 +425,7 @@ Turning speed as degrees per second
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-turn_speed_deg_s.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/turn_speed_deg_s")
+*   defined in: [Streaming Flights](flights-1-properties-turn_speed_deg_s.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/turn_speed_deg_s")
 
 ### turn\_speed\_deg\_s Type
 
@@ -443,7 +443,7 @@ Vertical speed as feet per minute
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-vertical_speed_ft_min.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/vertical_speed_ft_min")
+*   defined in: [Streaming Flights](flights-1-properties-vertical_speed_ft_min.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/vertical_speed_ft_min")
 
 ### vertical\_speed\_ft\_min Type
 
@@ -461,7 +461,7 @@ Departure airport. ICAO format
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/aprt_departure_icao")
+*   defined in: [Streaming Flights](flights-1-properties-aprt_departure_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/aprt_departure_icao")
 
 ### aprt\_departure\_icao Type
 
@@ -479,7 +479,7 @@ Arrival airport. ICAO format
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/aprt_arrival_icao")
+*   defined in: [Streaming Flights](flights-1-properties-aprt_arrival_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/aprt_arrival_icao")
 
 ### aprt\_arrival\_icao Type
 
@@ -497,7 +497,7 @@ Flag true if the aircraft is leaving the defined area
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-is_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/is_leaving")
+*   defined in: [Streaming Flights](flights-1-properties-is_leaving.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/is_leaving")
 
 ### is\_leaving Type
 
@@ -515,7 +515,7 @@ Expected last datetime after the aircraft leaves te defined area
 
 *   cannot be null
 
-*   defined in: [Streaming Flights](flights-1-properties-date_leaving.md "https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/date_leaving")
+*   defined in: [Streaming Flights](flights-1-properties-date_leaving.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/date_leaving")
 
 ### date\_leaving Type
 

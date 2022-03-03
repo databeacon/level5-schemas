@@ -1,7 +1,7 @@
 # Untitled integer in Firehose FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/actual_on
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/actual_on
 ```
 
 The actual in (gate arrival) time (POSIX epoch format)

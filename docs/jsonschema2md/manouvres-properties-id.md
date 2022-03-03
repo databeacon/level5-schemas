@@ -1,7 +1,7 @@
 # Untitled string in Manouvres (historical data) Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/id
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/id
 ```
 
 Potential conflict unique identifier

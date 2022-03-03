@@ -1,10 +1,10 @@
 # Untitled number in Streaming NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_alt_ft
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_alt_ft
 ```
 
-Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled
+Projected or sector exit in altitude
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |

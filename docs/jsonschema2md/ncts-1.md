@@ -1,7 +1,7 @@
 # Streaming NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json
 ```
 
 Definition of the streaming NCTs data
@@ -16,22 +16,21 @@ Definition of the streaming NCTs data
 
 # Streaming NCTs Properties
 
-| Property                                   | Type      | Required | Nullable       | Defined by                                                                                                                                                               |
-| :----------------------------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                                  | `string`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/id")                               |
-| [id\_flight](#id_flight)                   | `string`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-id_flight.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/id_flight")                 |
-| [id\_sector](#id_sector)                   | `string`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-id_sector.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/id_sector")                 |
-| [ref\_epoch](#ref_epoch)                   | `integer` | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-ref_epoch.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/ref_epoch")                 |
-| [proj\_exit\_epoch](#proj_exit_epoch)      | `integer` | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_epoch.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_epoch")     |
-| [proj\_exit\_lat\_deg](#proj_exit_lat_deg) | `number`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_lat_deg.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_lat_deg") |
-| [proj\_exit\_lon\_deg](#proj_exit_lon_deg) | `number`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_lon_deg.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_lon_deg") |
-| [proj\_exit\_alt\_ft](#proj_exit_alt_ft)   | `number`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_alt_ft.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_alt_ft")   |
-| [any\_pcd](#any_pcd)                       | `boolean` | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-any_pcd.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/any_pcd")                     |
-| [is\_nct](#is_nct)                         | `boolean` | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-is_nct.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/is_nct")                       |
+| Property                                   | Type      | Required | Nullable       | Defined by                                                                                                                                                                                   |
+| :----------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                                  | `string`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/id")                               |
+| [id\_flight](#id_flight)                   | `string`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-id_flight.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/id_flight")                 |
+| [id\_sector](#id_sector)                   | `string`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-id_sector.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/id_sector")                 |
+| [ref\_epoch](#ref_epoch)                   | `integer` | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-ref_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/ref_epoch")                 |
+| [proj\_exit\_epoch](#proj_exit_epoch)      | `integer` | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_epoch")     |
+| [proj\_exit\_lat\_deg](#proj_exit_lat_deg) | `number`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_lat_deg") |
+| [proj\_exit\_lon\_deg](#proj_exit_lon_deg) | `number`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_lon_deg") |
+| [proj\_exit\_alt\_ft](#proj_exit_alt_ft)   | `number`  | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-proj_exit_alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_alt_ft")   |
+| [is\_nct](#is_nct)                         | `boolean` | Optional | cannot be null | [Streaming NCTs](ncts-1-properties-is_nct.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/is_nct")                       |
 
 ## id
 
-FlightAware flight id
+NCT unique identifier
 
 `id`
 
@@ -41,7 +40,7 @@ FlightAware flight id
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/id")
+*   defined in: [Streaming NCTs](ncts-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/id")
 
 ### id Type
 
@@ -49,7 +48,7 @@ FlightAware flight id
 
 ## id\_flight
 
-
+Flight unique identifier
 
 `id_flight`
 
@@ -59,7 +58,7 @@ FlightAware flight id
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-id_flight.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/id_flight")
+*   defined in: [Streaming NCTs](ncts-1-properties-id_flight.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/id_flight")
 
 ### id\_flight Type
 
@@ -67,7 +66,7 @@ FlightAware flight id
 
 ## id\_sector
 
-Identifier used for ATC, if it differs from flight identifier
+Sector identifier. Null for soft-ncts
 
 `id_sector`
 
@@ -77,7 +76,7 @@ Identifier used for ATC, if it differs from flight identifier
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-id_sector.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/id_sector")
+*   defined in: [Streaming NCTs](ncts-1-properties-id_sector.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/id_sector")
 
 ### id\_sector Type
 
@@ -85,7 +84,7 @@ Identifier used for ATC, if it differs from flight identifier
 
 ## ref\_epoch
 
-The tail number or registration of the aircraft, if known and it differs from the ident
+Reference epoch, extracted from the aircraft position
 
 `ref_epoch`
 
@@ -95,7 +94,7 @@ The tail number or registration of the aircraft, if known and it differs from th
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-ref_epoch.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/ref_epoch")
+*   defined in: [Streaming NCTs](ncts-1-properties-ref_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/ref_epoch")
 
 ### ref\_epoch Type
 
@@ -103,7 +102,7 @@ The tail number or registration of the aircraft, if known and it differs from th
 
 ## proj\_exit\_epoch
 
-FAA or ICAO aircraft type code
+Projected or sector exit epoch
 
 `proj_exit_epoch`
 
@@ -113,7 +112,7 @@ FAA or ICAO aircraft type code
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_epoch.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_epoch")
+*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_epoch")
 
 ### proj\_exit\_epoch Type
 
@@ -121,7 +120,7 @@ FAA or ICAO aircraft type code
 
 ## proj\_exit\_lat\_deg
 
-ICAO airport code, waypoint, or latitude/longitude pair
+Projected or sector exit latitude in degrees
 
 `proj_exit_lat_deg`
 
@@ -131,7 +130,7 @@ ICAO airport code, waypoint, or latitude/longitude pair
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_lat_deg.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_lat_deg")
+*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_lat_deg")
 
 ### proj\_exit\_lat\_deg Type
 
@@ -139,7 +138,7 @@ ICAO airport code, waypoint, or latitude/longitude pair
 
 ## proj\_exit\_lon\_deg
 
-ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not known
+Projected or sector exit longitude in degrees
 
 `proj_exit_lon_deg`
 
@@ -149,7 +148,7 @@ ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not k
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_lon_deg.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_lon_deg")
+*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_lon_deg")
 
 ### proj\_exit\_lon\_deg Type
 
@@ -157,7 +156,7 @@ ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not k
 
 ## proj\_exit\_alt\_ft
 
-Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled
+Projected or sector exit in altitude
 
 `proj_exit_alt_ft`
 
@@ -167,33 +166,15 @@ Single letter code for current flight status, can be S Scheduled, F Filed, A Act
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_alt_ft.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/proj_exit_alt_ft")
+*   defined in: [Streaming NCTs](ncts-1-properties-proj_exit_alt_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/proj_exit_alt_ft")
 
 ### proj\_exit\_alt\_ft Type
 
 `number`
 
-## any\_pcd
-
-The scheduled out (gate departure) time (POSIX epoch format)
-
-`any_pcd`
-
-*   is optional
-
-*   Type: `boolean`
-
-*   cannot be null
-
-*   defined in: [Streaming NCTs](ncts-1-properties-any_pcd.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/any_pcd")
-
-### any\_pcd Type
-
-`boolean`
-
 ## is\_nct
 
-The scheduled in (gate arrival) time (POSIX epoch format)
+Flag for NCT activation and de-activation
 
 `is_nct`
 
@@ -203,7 +184,7 @@ The scheduled in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Streaming NCTs](ncts-1-properties-is_nct.md "https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/is_nct")
+*   defined in: [Streaming NCTs](ncts-1-properties-is_nct.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/is_nct")
 
 ### is\_nct Type
 

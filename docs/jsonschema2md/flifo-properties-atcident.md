@@ -1,7 +1,7 @@
 # Untitled string in Firehose FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/atcident
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/atcident
 ```
 
 Identifier used for ATC, if it differs from flight identifier

@@ -1,7 +1,7 @@
 # Untitled number in Firehose Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/alt
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/alt
 ```
 
 Altitude in feet (MSL)

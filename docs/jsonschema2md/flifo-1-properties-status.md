@@ -1,7 +1,7 @@
 # Untitled string in Streaming FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/status
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/status
 ```
 
 Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled

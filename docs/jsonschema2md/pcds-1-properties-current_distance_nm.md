@@ -1,7 +1,7 @@
 # Untitled number in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/current_distance_nm
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/current_distance_nm
 ```
 
 Distance between the pair measured at current datetime

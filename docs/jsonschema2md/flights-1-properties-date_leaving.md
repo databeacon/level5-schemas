@@ -1,7 +1,7 @@
 # Untitled integer in Streaming Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/date_leaving
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/date_leaving
 ```
 
 Expected last datetime after the aircraft leaves te defined area

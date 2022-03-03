@@ -1,7 +1,7 @@
 # Firehose FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json
 ```
 
 Definition for firehose static flight information
@@ -16,23 +16,23 @@ Definition for firehose static flight information
 
 # Firehose FLIFO Properties
 
-| Property                         | Type      | Required | Nullable       | Defined by                                                                                                                                                      |
-| :------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [pitr](#pitr)                    | `integer` | Required | cannot be null | [Firehose FLIFO](flifo-properties-pitr.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/pitr")                   |
-| [id](#id)                        | `string`  | Required | cannot be null | [Firehose FLIFO](flifo-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/id")                       |
-| [ident](#ident)                  | `string`  | Required | cannot be null | [Firehose FLIFO](flifo-properties-ident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/ident")                 |
-| [atcident](#atcident)            | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-atcident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/atcident")           |
-| [reg](#reg)                      | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-reg.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/reg")                     |
-| [aircrafttype](#aircrafttype)    | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-aircrafttype.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/aircrafttype")   |
-| [orig](#orig)                    | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-orig.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/orig")                   |
-| [dest](#dest)                    | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-dest.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/dest")                   |
-| [status](#status)                | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-status.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/status")               |
-| [scheduled\_off](#scheduled_off) | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-scheduled_off.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/scheduled_off") |
-| [scheduled\_on](#scheduled_on)   | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-scheduled_on.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/scheduled_on")   |
-| [estimated\_off](#estimated_off) | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-estimated_off.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/estimated_off") |
-| [estimated\_on](#estimated_on)   | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-estimated_on.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/estimated_on")   |
-| [actual\_on](#actual_on)         | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-actual_on.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/actual_on")         |
-| [actual\_off](#actual_off)       | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-actual_off.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/actual_off")       |
+| Property                         | Type      | Required | Nullable       | Defined by                                                                                                                                                                          |
+| :------------------------------- | :-------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [pitr](#pitr)                    | `integer` | Required | cannot be null | [Firehose FLIFO](flifo-properties-pitr.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/pitr")                   |
+| [id](#id)                        | `string`  | Required | cannot be null | [Firehose FLIFO](flifo-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/id")                       |
+| [ident](#ident)                  | `string`  | Required | cannot be null | [Firehose FLIFO](flifo-properties-ident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/ident")                 |
+| [atcident](#atcident)            | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-atcident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/atcident")           |
+| [reg](#reg)                      | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-reg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/reg")                     |
+| [aircrafttype](#aircrafttype)    | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-aircrafttype.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/aircrafttype")   |
+| [orig](#orig)                    | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-orig.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/orig")                   |
+| [dest](#dest)                    | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-dest.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/dest")                   |
+| [status](#status)                | `string`  | Optional | cannot be null | [Firehose FLIFO](flifo-properties-status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/status")               |
+| [scheduled\_off](#scheduled_off) | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-scheduled_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/scheduled_off") |
+| [scheduled\_on](#scheduled_on)   | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-scheduled_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/scheduled_on")   |
+| [estimated\_off](#estimated_off) | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-estimated_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/estimated_off") |
+| [estimated\_on](#estimated_on)   | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-estimated_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/estimated_on")   |
+| [actual\_on](#actual_on)         | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-actual_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/actual_on")         |
+| [actual\_off](#actual_off)       | `integer` | Optional | cannot be null | [Firehose FLIFO](flifo-properties-actual_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/actual_off")       |
 
 ## pitr
 
@@ -46,7 +46,7 @@ Point in time recovery
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-pitr.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/pitr")
+*   defined in: [Firehose FLIFO](flifo-properties-pitr.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/pitr")
 
 ### pitr Type
 
@@ -64,7 +64,7 @@ FlightAware flight id
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/id")
+*   defined in: [Firehose FLIFO](flifo-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/id")
 
 ### id Type
 
@@ -82,7 +82,7 @@ Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketin
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-ident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/ident")
+*   defined in: [Firehose FLIFO](flifo-properties-ident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/ident")
 
 ### ident Type
 
@@ -100,7 +100,7 @@ Identifier used for ATC, if it differs from flight identifier
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-atcident.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/atcident")
+*   defined in: [Firehose FLIFO](flifo-properties-atcident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/atcident")
 
 ### atcident Type
 
@@ -118,7 +118,7 @@ The tail number or registration of the aircraft, if known and it differs from th
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-reg.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/reg")
+*   defined in: [Firehose FLIFO](flifo-properties-reg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/reg")
 
 ### reg Type
 
@@ -136,7 +136,7 @@ FAA or ICAO aircraft type code
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-aircrafttype.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/aircrafttype")
+*   defined in: [Firehose FLIFO](flifo-properties-aircrafttype.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/aircrafttype")
 
 ### aircrafttype Type
 
@@ -154,7 +154,7 @@ ICAO airport code, waypoint, or latitude/longitude pair
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-orig.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/orig")
+*   defined in: [Firehose FLIFO](flifo-properties-orig.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/orig")
 
 ### orig Type
 
@@ -172,7 +172,7 @@ ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not k
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-dest.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/dest")
+*   defined in: [Firehose FLIFO](flifo-properties-dest.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/dest")
 
 ### dest Type
 
@@ -190,7 +190,7 @@ Single letter code for current flight status, can be S Scheduled, F Filed, A Act
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-status.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/status")
+*   defined in: [Firehose FLIFO](flifo-properties-status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/status")
 
 ### status Type
 
@@ -208,7 +208,7 @@ The scheduled out (gate departure) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-scheduled_off.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/scheduled_off")
+*   defined in: [Firehose FLIFO](flifo-properties-scheduled_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/scheduled_off")
 
 ### scheduled\_off Type
 
@@ -226,7 +226,7 @@ The scheduled in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-scheduled_on.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/scheduled_on")
+*   defined in: [Firehose FLIFO](flifo-properties-scheduled_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/scheduled_on")
 
 ### scheduled\_on Type
 
@@ -244,7 +244,7 @@ The estimated out (gate departure) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-estimated_off.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/estimated_off")
+*   defined in: [Firehose FLIFO](flifo-properties-estimated_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/estimated_off")
 
 ### estimated\_off Type
 
@@ -262,7 +262,7 @@ The estimated in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-estimated_on.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/estimated_on")
+*   defined in: [Firehose FLIFO](flifo-properties-estimated_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/estimated_on")
 
 ### estimated\_on Type
 
@@ -280,7 +280,7 @@ The actual in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-actual_on.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/actual_on")
+*   defined in: [Firehose FLIFO](flifo-properties-actual_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/actual_on")
 
 ### actual\_on Type
 
@@ -298,7 +298,7 @@ The actual out (gate departure) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Firehose FLIFO](flifo-properties-actual_off.md "https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/actual_off")
+*   defined in: [Firehose FLIFO](flifo-properties-actual_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/actual_off")
 
 ### actual\_off Type
 

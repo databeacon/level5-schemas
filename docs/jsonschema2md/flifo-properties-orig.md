@@ -1,7 +1,7 @@
 # Untitled string in Firehose FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/orig
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/orig
 ```
 
 ICAO airport code, waypoint, or latitude/longitude pair

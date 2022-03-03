@@ -1,7 +1,7 @@
 # Untitled number in Streaming Current Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/track_deg
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/currentPositions.schema.json#/properties/track_deg
 ```
 
 Aircraft's heading. From FlightAware data

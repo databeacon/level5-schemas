@@ -1,7 +1,7 @@
 # Untitled number in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lon_deg
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lon_deg
 ```
 
 Longitude in degrees of the CPA for the ownship

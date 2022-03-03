@@ -1,7 +1,7 @@
 # Untitled integer in Labels predictive NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/ref_epoch
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/ref_epoch
 ```
 
 The tail number or registration of the aircraft, if known and it differs from the ident

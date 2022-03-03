@@ -1,7 +1,7 @@
 # Untitled string in Streaming Current Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/aprt_departure_icao
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/currentPositions.schema.json#/properties/aprt_departure_icao
 ```
 
 Departure airport. ICAO format

@@ -1,7 +1,7 @@
 # Untitled integer in Batch Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/batch/flights.schema.json#/properties/gs_kts
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/flights.schema.json#/properties/gs_kts
 ```
 
 Groundspeed in knots

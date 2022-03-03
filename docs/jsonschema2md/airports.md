@@ -1,7 +1,7 @@
-# Streaming FLIFO Schema
+# Airports Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/airports.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json
 ```
 
 Definition for the airports cache table used as ETL helper
@@ -10,27 +10,27 @@ Definition for the airports cache table used as ETL helper
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [airports.schema.json](../../out/airports.schema.json "open original schema") |
 
-## Streaming FLIFO Type
+## Airports Type
 
-`object` ([Streaming FLIFO](airports.md))
+`object` ([Airports](airports.md))
 
-# Streaming FLIFO Properties
+# Airports Properties
 
-| Property                                 | Type     | Required | Nullable       | Defined by                                                                                                                                                            |
-| :--------------------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ident](#ident)                          | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-ident.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/ident")                         |
-| [type](#type)                            | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-type.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/type")                           |
-| [name](#name)                            | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-name.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/name")                           |
-| [latitude\_deg](#latitude_deg)           | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-latitude_deg.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/latitude_deg")           |
-| [longitude\_deg](#longitude_deg)         | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-longitude_deg.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/longitude_deg")         |
-| [elevation\_ft](#elevation_ft)           | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-elevation_ft.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/elevation_ft")           |
-| [continent](#continent)                  | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-continent.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/continent")                 |
-| [iso\_country](#iso_country)             | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-iso_country.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/iso_country")             |
-| [iso\_region](#iso_region)               | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-iso_region.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/iso_region")               |
-| [municipality](#municipality)            | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-municipality.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/municipality")           |
-| [scheduled\_service](#scheduled_service) | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-scheduled_service.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/scheduled_service") |
-| [gps\_code](#gps_code)                   | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-gps_code.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/gps_code")                   |
-| [iata\_code](#iata_code)                 | `string` | Optional | cannot be null | [Streaming FLIFO](airports-properties-iata_code.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/iata_code")                 |
+| Property                                 | Type     | Required | Nullable       | Defined by                                                                                                                                                                         |
+| :--------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ident](#ident)                          | `string` | Optional | cannot be null | [Airports](airports-properties-ident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/ident")                         |
+| [type](#type)                            | `string` | Optional | cannot be null | [Airports](airports-properties-type.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/type")                           |
+| [name](#name)                            | `string` | Optional | cannot be null | [Airports](airports-properties-name.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/name")                           |
+| [latitude\_deg](#latitude_deg)           | `string` | Optional | cannot be null | [Airports](airports-properties-latitude_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/latitude_deg")           |
+| [longitude\_deg](#longitude_deg)         | `string` | Optional | cannot be null | [Airports](airports-properties-longitude_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/longitude_deg")         |
+| [elevation\_ft](#elevation_ft)           | `string` | Optional | cannot be null | [Airports](airports-properties-elevation_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/elevation_ft")           |
+| [continent](#continent)                  | `string` | Optional | cannot be null | [Airports](airports-properties-continent.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/continent")                 |
+| [iso\_country](#iso_country)             | `string` | Optional | cannot be null | [Airports](airports-properties-iso_country.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/iso_country")             |
+| [iso\_region](#iso_region)               | `string` | Optional | cannot be null | [Airports](airports-properties-iso_region.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/iso_region")               |
+| [municipality](#municipality)            | `string` | Optional | cannot be null | [Airports](airports-properties-municipality.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/municipality")           |
+| [scheduled\_service](#scheduled_service) | `string` | Optional | cannot be null | [Airports](airports-properties-scheduled_service.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/scheduled_service") |
+| [gps\_code](#gps_code)                   | `string` | Optional | cannot be null | [Airports](airports-properties-gps_code.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/gps_code")                   |
+| [iata\_code](#iata_code)                 | `string` | Optional | cannot be null | [Airports](airports-properties-iata_code.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/iata_code")                 |
 
 ## ident
 
@@ -44,7 +44,7 @@ Identifier code
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-ident.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/ident")
+*   defined in: [Airports](airports-properties-ident.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/ident")
 
 ### ident Type
 
@@ -62,7 +62,7 @@ Type of airport
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-type.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/type")
+*   defined in: [Airports](airports-properties-type.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/type")
 
 ### type Type
 
@@ -80,7 +80,7 @@ Airport name
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-name.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/name")
+*   defined in: [Airports](airports-properties-name.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/name")
 
 ### name Type
 
@@ -98,7 +98,7 @@ Airport location latitude in degrees
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-latitude_deg.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/latitude_deg")
+*   defined in: [Airports](airports-properties-latitude_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/latitude_deg")
 
 ### latitude\_deg Type
 
@@ -116,7 +116,7 @@ Airport location longitude in degrees
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-longitude_deg.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/longitude_deg")
+*   defined in: [Airports](airports-properties-longitude_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/longitude_deg")
 
 ### longitude\_deg Type
 
@@ -134,7 +134,7 @@ Airport location altitude in ft
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-elevation_ft.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/elevation_ft")
+*   defined in: [Airports](airports-properties-elevation_ft.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/elevation_ft")
 
 ### elevation\_ft Type
 
@@ -152,7 +152,7 @@ Airport location continent
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-continent.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/continent")
+*   defined in: [Airports](airports-properties-continent.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/continent")
 
 ### continent Type
 
@@ -170,7 +170,7 @@ Airport localtion ISO country identifier
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-iso_country.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/iso_country")
+*   defined in: [Airports](airports-properties-iso_country.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/iso_country")
 
 ### iso\_country Type
 
@@ -188,7 +188,7 @@ Airport location ISO region identifier
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-iso_region.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/iso_region")
+*   defined in: [Airports](airports-properties-iso_region.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/iso_region")
 
 ### iso\_region Type
 
@@ -206,7 +206,7 @@ Airport location municipality
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-municipality.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/municipality")
+*   defined in: [Airports](airports-properties-municipality.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/municipality")
 
 ### municipality Type
 
@@ -224,7 +224,7 @@ Flag indicating service scheduling
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-scheduled_service.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/scheduled_service")
+*   defined in: [Airports](airports-properties-scheduled_service.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/scheduled_service")
 
 ### scheduled\_service Type
 
@@ -251,7 +251,7 @@ GPS code
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-gps_code.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/gps_code")
+*   defined in: [Airports](airports-properties-gps_code.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/gps_code")
 
 ### gps\_code Type
 
@@ -269,7 +269,7 @@ IATA airport code
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](airports-properties-iata_code.md "https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/iata_code")
+*   defined in: [Airports](airports-properties-iata_code.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/iata_code")
 
 ### iata\_code Type
 

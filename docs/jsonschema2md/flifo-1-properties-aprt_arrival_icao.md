@@ -1,7 +1,7 @@
 # Untitled string in Streaming FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/aprt_arrival_icao
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/aprt_arrival_icao
 ```
 
 ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not known

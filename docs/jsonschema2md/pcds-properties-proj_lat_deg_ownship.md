@@ -1,7 +1,7 @@
 # Untitled number in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/pcds.schema.json#/properties/proj_lat_deg_ownship
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/pcds.schema.json#/properties/proj_lat_deg_ownship
 ```
 
 Latitude at 6 seconds projection in order to facilitate interpolations

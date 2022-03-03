@@ -1,7 +1,7 @@
 # Untitled string in Labels predictive NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/id_flight
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/id_flight
 ```
 
 FlightAware flight id

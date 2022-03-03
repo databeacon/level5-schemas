@@ -1,7 +1,7 @@
 # Labels predictive NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json
 ```
 
 Definition of the streaming NCTs data
@@ -16,12 +16,12 @@ Definition of the streaming NCTs data
 
 # Labels predictive NCTs Properties
 
-| Property                 | Type      | Required | Nullable       | Defined by                                                                                                                                                 |
-| :----------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                | `string`  | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/id")               |
-| [id\_flight](#id_flight) | `string`  | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-id_flight.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/id_flight") |
-| [ref\_epoch](#ref_epoch) | `integer` | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-ref_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/ref_epoch") |
-| [is\_nct](#is_nct)       | `boolean` | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-is_nct.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/is_nct")       |
+| Property                 | Type      | Required | Nullable       | Defined by                                                                                                                                                                     |
+| :----------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                | `string`  | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/id")               |
+| [id\_flight](#id_flight) | `string`  | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-id_flight.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/id_flight") |
+| [ref\_epoch](#ref_epoch) | `integer` | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-ref_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/ref_epoch") |
+| [is\_nct](#is_nct)       | `boolean` | Optional | cannot be null | [Labels predictive NCTs](ncts-properties-is_nct.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/is_nct")       |
 
 ## id
 
@@ -35,7 +35,7 @@ NCT label id
 
 *   cannot be null
 
-*   defined in: [Labels predictive NCTs](ncts-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/id")
+*   defined in: [Labels predictive NCTs](ncts-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/id")
 
 ### id Type
 
@@ -53,7 +53,7 @@ FlightAware flight id
 
 *   cannot be null
 
-*   defined in: [Labels predictive NCTs](ncts-properties-id_flight.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/id_flight")
+*   defined in: [Labels predictive NCTs](ncts-properties-id_flight.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/id_flight")
 
 ### id\_flight Type
 
@@ -71,7 +71,7 @@ The tail number or registration of the aircraft, if known and it differs from th
 
 *   cannot be null
 
-*   defined in: [Labels predictive NCTs](ncts-properties-ref_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/ref_epoch")
+*   defined in: [Labels predictive NCTs](ncts-properties-ref_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/ref_epoch")
 
 ### ref\_epoch Type
 
@@ -89,7 +89,7 @@ The scheduled in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Labels predictive NCTs](ncts-properties-is_nct.md "https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/is_nct")
+*   defined in: [Labels predictive NCTs](ncts-properties-is_nct.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/is_nct")
 
 ### is\_nct Type
 

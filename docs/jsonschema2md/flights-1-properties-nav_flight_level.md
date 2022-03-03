@@ -1,7 +1,7 @@
 # Untitled integer in Streaming Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/nav_flight_level
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/nav_flight_level
 ```
 
 Target flight level Mode-S

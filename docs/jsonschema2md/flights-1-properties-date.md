@@ -1,7 +1,7 @@
 # Untitled string in Streaming Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/date
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/date
 ```
 
 Message datetime

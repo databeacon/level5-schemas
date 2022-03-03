@@ -1,7 +1,7 @@
 # Untitled integer in Streaming Current Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json#/properties/date_leaving
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/currentPositions.schema.json#/properties/date_leaving
 ```
 
 Expected last datetime after the aircraft leaves te defined area

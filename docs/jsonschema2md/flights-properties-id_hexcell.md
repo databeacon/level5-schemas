@@ -1,7 +1,7 @@
 # Untitled string in Batch Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/batch/flights.schema.json#/properties/id_hexcell
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/flights.schema.json#/properties/id_hexcell
 ```
 
 H3 hexcell identifier

@@ -1,7 +1,7 @@
 # Manouvres (historical data) Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json
 ```
 
 Definition of the manouvres historical data
@@ -16,12 +16,12 @@ Definition of the manouvres historical data
 
 # Manouvres (historical data) Properties
 
-| Property        | Type      | Required | Nullable       | Defined by                                                                                                                                                        |
-| :-------------- | :-------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)       | `string`  | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/id")       |
-| [month](#month) | `integer` | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-month.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/month") |
-| [day](#day)     | `integer` | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-day.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/day")     |
-| [hour](#hour)   | `integer` | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-hour.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/hour")   |
+| Property        | Type      | Required | Nullable       | Defined by                                                                                                                                                                            |
+| :-------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [id](#id)       | `string`  | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/id")       |
+| [month](#month) | `integer` | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-month.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/month") |
+| [day](#day)     | `integer` | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-day.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/day")     |
+| [hour](#hour)   | `integer` | Optional | cannot be null | [Manouvres (historical data)](manouvres-properties-hour.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/hour")   |
 
 ## id
 
@@ -35,7 +35,7 @@ Potential conflict unique identifier
 
 *   cannot be null
 
-*   defined in: [Manouvres (historical data)](manouvres-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/id")
+*   defined in: [Manouvres (historical data)](manouvres-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/id")
 
 ### id Type
 
@@ -53,7 +53,7 @@ Month as number, extracted from date, used as partition column
 
 *   cannot be null
 
-*   defined in: [Manouvres (historical data)](manouvres-properties-month.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/month")
+*   defined in: [Manouvres (historical data)](manouvres-properties-month.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/month")
 
 ### month Type
 
@@ -71,7 +71,7 @@ Day extracted from date, used as partition column
 
 *   cannot be null
 
-*   defined in: [Manouvres (historical data)](manouvres-properties-day.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/day")
+*   defined in: [Manouvres (historical data)](manouvres-properties-day.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/day")
 
 ### day Type
 
@@ -89,7 +89,7 @@ Hour extracted from date, used as partition column
 
 *   cannot be null
 
-*   defined in: [Manouvres (historical data)](manouvres-properties-hour.md "https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/hour")
+*   defined in: [Manouvres (historical data)](manouvres-properties-hour.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/hour")
 
 ### hour Type
 

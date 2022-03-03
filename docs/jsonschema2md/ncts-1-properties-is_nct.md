@@ -1,10 +1,10 @@
 # Untitled boolean in Streaming NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/is_nct
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/is_nct
 ```
 
-The scheduled in (gate arrival) time (POSIX epoch format)
+Flag for NCT activation and de-activation
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |

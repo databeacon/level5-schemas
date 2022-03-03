@@ -1,7 +1,7 @@
 # Untitled number in Streaming FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/callsign_iata
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/callsign_iata
 ```
 
 Callsign identifying the flight as IATA/ticketing flight number

@@ -1,7 +1,7 @@
 # Untitled string in Firehose FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/ident
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/ident
 ```
 
 Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration

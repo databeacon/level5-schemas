@@ -1,7 +1,7 @@
 # Untitled string in Firehose FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/status
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/status
 ```
 
 Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled

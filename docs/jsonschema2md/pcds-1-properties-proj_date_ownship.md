@@ -1,7 +1,7 @@
 # Untitled integer in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_date_ownship
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_date_ownship
 ```
 
 Datetime at 6 seconds projection in order to facilitate interpolations

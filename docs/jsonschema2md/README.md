@@ -2,77 +2,75 @@
 
 ## Top-level Schemas
 
-*   [Batch Flights](./flights.md "Definition for a flights dynamic batch data") – `https://github.com/databeacon/level5-schemas/edit/main/schemas/batch/flights.schema.json`
+*   [Aggregations](./aggregations.md "KPI aggregations for Sierra5 supervisor tool") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/rest/aggregations.schema.json`
 
-*   [Firehose FLIFO](./flifo.md "Definition for firehose static flight information") – `https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json`
+*   [Airports](./airports.md "Definition for the airports cache table used as ETL helper") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json`
 
-*   [Firehose Positions](./positions.md "Definition for a firehose positions data") – `https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json`
+*   [Batch Flights](./flights.md "Definition for a flights dynamic batch data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/flights.schema.json`
 
-*   [Labels predictive NCTs](./ncts.md "Definition of the streaming NCTs data") – `https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json`
+*   [Blender](./blender.md "Asynchronous topics merging") – `/blender.schema.json`
 
-*   [Manouvres (historical data)](./manouvres.md "Definition of the manouvres historical data") – `https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json`
+*   [Firehose FLIFO](./flifo.md "Definition for firehose static flight information") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json`
 
-*   [Streaming Blender](./blender.md "Definition the blender stream") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json`
+*   [Firehose Positions](./positions.md "Definition for a firehose positions data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json`
 
-*   [Streaming Current Positions](./currentpositions.md "Definition for current positions caché used for streaming calculations") – `https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/currentPositions.schema.json`
+*   [Labels predictive NCTs](./ncts.md "Definition of the streaming NCTs data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json`
 
-*   [Streaming FLIFO](./airports.md "Definition for the airports cache table used as ETL helper") – `https://github.com/databeacon/level5-schemas/schemas/airports.schema.json`
+*   [Manouvres (historical data)](./manouvres.md "Definition of the manouvres historical data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json`
 
-*   [Streaming FLIFO](./flifo-1.md "Definition for a flights static data") – `https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json`
+*   [Streaming Current Positions](./currentpositions.md "Definition for current positions caché used for streaming calculations") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/currentPositions.schema.json`
 
-*   [Streaming Flights](./flights-1.md "Definition for a flights dynamic data") – `https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json`
+*   [Streaming FLIFO](./flifo-1.md "Definition for a flights static data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json`
 
-*   [Streaming NCTs](./ncts-1.md "Definition of the streaming NCTs data") – `https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json`
+*   [Streaming Flights](./flights-1.md "Definition for a flights dynamic data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json`
 
-*   [Streaming PCDs](./pcds.md "Definition of the streaming PCDs data") – `https://github.com/databeacon/level5-schemas/schemas/streaming/pcds.schema.json`
+*   [Streaming NCTs](./ncts-1.md "Definition of the streaming NCTs data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json`
 
-*   [Streaming PCDs](./pcds-1.md "Definition of the batch PCDs data") – `https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json`
+*   [Streaming PCDs](./pcds.md "Definition of the streaming PCDs data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/pcds.schema.json`
+
+*   [Streaming PCDs](./pcds-1.md "Definition of the batch PCDs data") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json`
 
 ## Other Schemas
 
 ### Objects
 
-*   [Exit projection](./blender-properties-non-conflicting-flights-properties-exit-projection.md "Projection for soft-NCTs") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/nct/properties/projExit`
+*   [Flight data](./blender-defs-flight-data.md) – `/blender.schema.json#/$defs/flight`
 
-*   [Flight](./blender-properties-flight.md "Represents a single flight") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/flights`
+*   [Flight positions](./blender-defs-flight-data-properties-flight-positions.md) – `/blender.schema.json#/$defs/flight/properties/points4d`
 
-*   [Intruder](./blender-properties-potential-conflict-detection--properties-intruder.md "Intruder position and CPA") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder`
+*   [Flight positions](./blender-defs-pcdflightsyncedinfo-properties-flight-positions.md) – `/blender.schema.json#/$defs/pcdFlightSyncedInfo/properties/points4d`
 
-*   [Intruder](./blender-properties-potential-conflict-detection--properties-synced-intruder.md "Intruder position and CPA") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/synced/intruder`
+*   [Flight positions](./blender-defs-flight-data-properties-flight-positions.md) – `/blender.schema.json#/$defs/flight/properties/points4d`
 
-*   [Location](./blender-properties-flight-properties-location.md "Aircraft 4D position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/flights/properties/location`
+*   [Flight positions](./blender-defs-pcdflightsyncedinfo-properties-flight-positions.md) – `/blender.schema.json#/$defs/pcdFlightSyncedInfo/properties/points4d`
 
-*   [Non-conflicting flights](./blender-properties-non-conflicting-flights.md "Refers to our mike5-stream NCTs calculation pipeline") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/nct`
+*   [Flight positions](./blender-defs-pcdflightsyncedinfo-properties-flight-positions.md) – `/blender.schema.json#/$defs/pcdFlightSyncedInfo/properties/points4d`
 
-*   [Ownship](./blender-properties-potential-conflict-detection--properties-ownship.md "Ownship position and CPA") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/ownship`
+*   [Flight positions](./blender-defs-pcdflightsyncedinfo-properties-flight-positions.md) – `/blender.schema.json#/$defs/pcdFlightSyncedInfo/properties/points4d`
 
-*   [Position projection](./blender-properties-flight-properties-synced-flight-properties-position-projection.md "4D location at 60s ahead of sync epoch") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/flights/properties/synced/properties/projection`
+*   [Non-conflicting status](./blender-defs-non-conflicting-status.md) – `/blender.schema.json#/$defs/nct`
 
-*   [Potential conflict detection ](./blender-properties-potential-conflict-detection-.md "Refers to our mike5-stream PCDs calculation pipeline") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds`
+*   [Point 4D](./blender-defs-point-4d.md "A time-space position on earth") – `/blender.schema.json#/$defs/point4d`
 
-*   [Projected cpa](./blender-properties-potential-conflict-detection--properties-intruder-properties-projected-cpa.md "4D Projected position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/cpa`
+*   [Potential conflict detected](./blender-defs-potential-conflict-detected.md) – `/blender.schema.json#/$defs/pcd`
 
-*   [Projected position](./blender-properties-non-conflicting-flights-properties-exit-projection-properties-projected-position.md "4D Projected position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/nct/properties/projExit/properties/location`
+*   [Untitled object in Aggregations](./aggregations-properties-multisectors-items.md) – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/rest/aggregations.schema.json#/properties/multisectors/items`
 
-*   [Projected position](./blender-properties-potential-conflict-detection--properties-ownship-properties-projected-position.md "4D Projected position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/ownship/properties/location`
+*   [Untitled object in Aggregations](./aggregations-properties-multisectors-items-properties-aggregations-items.md) – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/rest/aggregations.schema.json#/properties/multisectors/items/properties/aggregations/items`
 
-*   [Projected position](./blender-properties-potential-conflict-detection--properties-ownship-properties-projected-position-1.md "4D Projected position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/ownship/properties/cpa`
-
-*   [Projected position](./blender-properties-potential-conflict-detection--properties-intruder-properties-projected-position.md "4D Projected position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/intruder/properties/location`
-
-*   [Projected position](./blender-properties-potential-conflict-detection--properties-synced-ownship-projected-position.md "4D Projected position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/synced/ownship/location`
-
-*   [Projected position](./blender-properties-potential-conflict-detection--properties-synced-intruder-properties-projected-position.md "4D Projected position") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/pcds/properties/synced/intruder/properties/location`
-
-*   [Synced Flight](./blender-properties-flight-properties-synced-flight.md "Synced properties of the Flight object") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/flights/properties/synced`
-
-*   [Synced NCT](./blender-properties-non-conflicting-flights-properties-synced-nct.md "Nothing to sync yet") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/nct/properties/synced`
-
-*   [Synced position](./blender-properties-flight-properties-synced-flight-properties-synced-position.md "Aircraft synced 4D location") – `https://github.com/databeacon/level5-schemas/schemas/streaming/blender.schema.json#/properties/flights/properties/synced/properties/location`
+*   [Untitled object in Blender](./blender-defs-pcdflightsyncedinfo.md) – `/blender.schema.json#/$defs/pcdFlightSyncedInfo`
 
 ### Arrays
 
+*   [Flights data](./blender-properties-flights-data.md) – `/blender.schema.json#/properties/flights`
 
+*   [Potential conflicts detected](./blender-defs-flight-data-properties-potential-conflicts-detected.md) – `/blender.schema.json#/$defs/flight/properties/pcds`
+
+*   [Potential conflicts detected](./blender-defs-flight-data-properties-potential-conflicts-detected.md) – `/blender.schema.json#/$defs/flight/properties/pcds`
+
+*   [Untitled array in Aggregations](./aggregations-properties-multisectors.md "Type of airport") – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/rest/aggregations.schema.json#/properties/multisectors`
+
+*   [Untitled array in Aggregations](./aggregations-properties-multisectors-items-properties-aggregations.md) – `https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/rest/aggregations.schema.json#/properties/multisectors/items/properties/aggregations`
 
 ## Version Note
 

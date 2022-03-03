@@ -1,7 +1,7 @@
 # Untitled boolean in Streaming Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/streaming/flights.schema.json#/properties/is_leaving
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flights.schema.json#/properties/is_leaving
 ```
 
 Flag true if the aircraft is leaving the defined area

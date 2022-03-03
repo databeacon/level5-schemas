@@ -1,7 +1,7 @@
 # Untitled integer in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/current_epoch
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/current_epoch
 ```
 
 Most recent datetime from the pair of flights

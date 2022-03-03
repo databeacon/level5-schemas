@@ -1,7 +1,7 @@
 # Untitled boolean in Labels predictive NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/ncts.schema.json#/properties/is_nct
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/ncts.schema.json#/properties/is_nct
 ```
 
 The scheduled in (gate arrival) time (POSIX epoch format)

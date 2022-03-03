@@ -1,7 +1,7 @@
 # Untitled string in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/pcds.schema.json#/properties/id_ownship
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/pcds.schema.json#/properties/id_ownship
 ```
 
 Flight id of ownship

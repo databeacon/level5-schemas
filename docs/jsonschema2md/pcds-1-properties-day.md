@@ -1,7 +1,7 @@
 # Untitled integer in Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/day
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/day
 ```
 
 Day extracted from date, used as partition column

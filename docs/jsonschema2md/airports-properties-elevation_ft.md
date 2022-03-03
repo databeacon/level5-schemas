@@ -1,7 +1,7 @@
-# Untitled string in Streaming FLIFO Schema
+# Untitled string in Airports Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/airports.schema.json#/properties/elevation_ft
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/airports.schema.json#/properties/elevation_ft
 ```
 
 Airport location altitude in ft

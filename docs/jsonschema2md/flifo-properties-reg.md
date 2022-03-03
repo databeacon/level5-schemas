@@ -1,7 +1,7 @@
 # Untitled string in Firehose FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/flifo.schema.json#/properties/reg
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json#/properties/reg
 ```
 
 The tail number or registration of the aircraft, if known and it differs from the ident

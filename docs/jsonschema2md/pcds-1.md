@@ -1,7 +1,7 @@
 # Streaming PCDs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json
 ```
 
 Definition of the batch PCDs data
@@ -16,37 +16,37 @@ Definition of the batch PCDs data
 
 # Streaming PCDs Properties
 
-| Property                                           | Type      | Required | Nullable       | Defined by                                                                                                                                                                   |
-| :------------------------------------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [id](#id)                                          | `string`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/id")                                       |
-| [is\_pcd](#is_pcd)                                 | `boolean` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-is_pcd.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/is_pcd")                               |
-| [id\_ownship](#id_ownship)                         | `string`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-id_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/id_ownship")                       |
-| [id\_intruder](#id_intruder)                       | `string`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-id_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/id_intruder")                     |
-| [date\_ownship](#date_ownship)                     | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-date_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/date_ownship")                   |
-| [lat\_deg\_ownship](#lat_deg_ownship)              | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lat_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lat_deg_ownship")             |
-| [lon\_deg\_ownship](#lon_deg_ownship)              | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lon_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lon_deg_ownship")             |
-| [proj\_date\_ownship](#proj_date_ownship)          | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_date_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_date_ownship")         |
-| [proj\_lat\_deg\_ownship](#proj_lat_deg_ownship)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lat_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_ownship")   |
-| [proj\_lon\_deg\_ownship](#proj_lon_deg_ownship)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lon_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_ownship")   |
-| [date\_intruder](#date_intruder)                   | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-date_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/date_intruder")                 |
-| [lat\_deg\_intruder](#lat_deg_intruder)            | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lat_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lat_deg_intruder")           |
-| [lon\_deg\_intruder](#lon_deg_intruder)            | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lon_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lon_deg_intruder")           |
-| [proj\_date\_intruder](#proj_date_intruder)        | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_date_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_date_intruder")       |
-| [proj\_lat\_deg\_intruder](#proj_lat_deg_intruder) | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lat_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_intruder") |
-| [proj\_lon\_deg\_intruder](#proj_lon_deg_intruder) | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lon_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_intruder") |
-| [ref\_epoch](#ref_epoch)                           | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-ref_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/ref_epoch")                         |
-| [current\_epoch](#current_epoch)                   | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-current_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/current_epoch")                 |
-| [current\_distance\_nm](#current_distance_nm)      | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-current_distance_nm.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/current_distance_nm")     |
-| [warning\_epoch](#warning_epoch)                   | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-warning_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/warning_epoch")                 |
-| [warning\_distance\_nm](#warning_distance_nm)      | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-warning_distance_nm.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/warning_distance_nm")     |
-| [cpa\_ownship\_lat\_deg](#cpa_ownship_lat_deg)     | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_ownship_lat_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lat_deg")     |
-| [cpa\_ownship\_lon\_deg](#cpa_ownship_lon_deg)     | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_ownship_lon_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lon_deg")     |
-| [cpa\_intruder\_lat\_deg](#cpa_intruder_lat_deg)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_intruder_lat_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lat_deg")   |
-| [cpa\_intruder\_lon\_deg](#cpa_intruder_lon_deg)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_intruder_lon_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lon_deg")   |
-| [is\_ownship\_first](#is_ownship_first)            | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-is_ownship_first.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/is_ownship_first")           |
-| [month](#month)                                    | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-month.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/month")                                 |
-| [day](#day)                                        | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-day.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/day")                                     |
-| [hour](#hour)                                      | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-hour.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/hour")                                   |
+| Property                                           | Type      | Required | Nullable       | Defined by                                                                                                                                                                                       |
+| :------------------------------------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [id](#id)                                          | `string`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/id")                                       |
+| [is\_pcd](#is_pcd)                                 | `boolean` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-is_pcd.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/is_pcd")                               |
+| [id\_ownship](#id_ownship)                         | `string`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-id_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/id_ownship")                       |
+| [id\_intruder](#id_intruder)                       | `string`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-id_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/id_intruder")                     |
+| [date\_ownship](#date_ownship)                     | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-date_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/date_ownship")                   |
+| [lat\_deg\_ownship](#lat_deg_ownship)              | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lat_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lat_deg_ownship")             |
+| [lon\_deg\_ownship](#lon_deg_ownship)              | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lon_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lon_deg_ownship")             |
+| [proj\_date\_ownship](#proj_date_ownship)          | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_date_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_date_ownship")         |
+| [proj\_lat\_deg\_ownship](#proj_lat_deg_ownship)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lat_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_ownship")   |
+| [proj\_lon\_deg\_ownship](#proj_lon_deg_ownship)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lon_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_ownship")   |
+| [date\_intruder](#date_intruder)                   | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-date_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/date_intruder")                 |
+| [lat\_deg\_intruder](#lat_deg_intruder)            | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lat_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lat_deg_intruder")           |
+| [lon\_deg\_intruder](#lon_deg_intruder)            | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-lon_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lon_deg_intruder")           |
+| [proj\_date\_intruder](#proj_date_intruder)        | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_date_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_date_intruder")       |
+| [proj\_lat\_deg\_intruder](#proj_lat_deg_intruder) | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lat_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_intruder") |
+| [proj\_lon\_deg\_intruder](#proj_lon_deg_intruder) | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-proj_lon_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_intruder") |
+| [ref\_epoch](#ref_epoch)                           | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-ref_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/ref_epoch")                         |
+| [current\_epoch](#current_epoch)                   | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-current_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/current_epoch")                 |
+| [current\_distance\_nm](#current_distance_nm)      | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-current_distance_nm.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/current_distance_nm")     |
+| [warning\_epoch](#warning_epoch)                   | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-warning_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/warning_epoch")                 |
+| [warning\_distance\_nm](#warning_distance_nm)      | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-warning_distance_nm.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/warning_distance_nm")     |
+| [cpa\_ownship\_lat\_deg](#cpa_ownship_lat_deg)     | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_ownship_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lat_deg")     |
+| [cpa\_ownship\_lon\_deg](#cpa_ownship_lon_deg)     | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_ownship_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lon_deg")     |
+| [cpa\_intruder\_lat\_deg](#cpa_intruder_lat_deg)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_intruder_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lat_deg")   |
+| [cpa\_intruder\_lon\_deg](#cpa_intruder_lon_deg)   | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-cpa_intruder_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lon_deg")   |
+| [is\_ownship\_first](#is_ownship_first)            | `number`  | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-is_ownship_first.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/is_ownship_first")           |
+| [month](#month)                                    | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-month.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/month")                                 |
+| [day](#day)                                        | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-day.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/day")                                     |
+| [hour](#hour)                                      | `integer` | Optional | cannot be null | [Streaming PCDs](pcds-1-properties-hour.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/hour")                                   |
 
 ## id
 
@@ -60,7 +60,7 @@ Potential conflict unique identifier
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/id")
+*   defined in: [Streaming PCDs](pcds-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/id")
 
 ### id Type
 
@@ -78,7 +78,7 @@ Flag true if is potential conflict
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-is_pcd.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/is_pcd")
+*   defined in: [Streaming PCDs](pcds-1-properties-is_pcd.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/is_pcd")
 
 ### is\_pcd Type
 
@@ -96,7 +96,7 @@ Flight id of ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-id_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/id_ownship")
+*   defined in: [Streaming PCDs](pcds-1-properties-id_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/id_ownship")
 
 ### id\_ownship Type
 
@@ -114,7 +114,7 @@ Flight id of intruder
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-id_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/id_intruder")
+*   defined in: [Streaming PCDs](pcds-1-properties-id_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/id_intruder")
 
 ### id\_intruder Type
 
@@ -132,7 +132,7 @@ Datetime of last position message received from ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-date_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/date_ownship")
+*   defined in: [Streaming PCDs](pcds-1-properties-date_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/date_ownship")
 
 ### date\_ownship Type
 
@@ -150,7 +150,7 @@ Latitude in degrees from last position received from ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-lat_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lat_deg_ownship")
+*   defined in: [Streaming PCDs](pcds-1-properties-lat_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lat_deg_ownship")
 
 ### lat\_deg\_ownship Type
 
@@ -168,7 +168,7 @@ Longitude in degrees from last position received from ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-lon_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lon_deg_ownship")
+*   defined in: [Streaming PCDs](pcds-1-properties-lon_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lon_deg_ownship")
 
 ### lon\_deg\_ownship Type
 
@@ -186,7 +186,7 @@ Datetime at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-proj_date_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_date_ownship")
+*   defined in: [Streaming PCDs](pcds-1-properties-proj_date_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_date_ownship")
 
 ### proj\_date\_ownship Type
 
@@ -204,7 +204,7 @@ Latitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-proj_lat_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_ownship")
+*   defined in: [Streaming PCDs](pcds-1-properties-proj_lat_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_ownship")
 
 ### proj\_lat\_deg\_ownship Type
 
@@ -222,7 +222,7 @@ Longitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-proj_lon_deg_ownship.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_ownship")
+*   defined in: [Streaming PCDs](pcds-1-properties-proj_lon_deg_ownship.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_ownship")
 
 ### proj\_lon\_deg\_ownship Type
 
@@ -240,7 +240,7 @@ Datetime at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-date_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/date_intruder")
+*   defined in: [Streaming PCDs](pcds-1-properties-date_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/date_intruder")
 
 ### date\_intruder Type
 
@@ -258,7 +258,7 @@ Latitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-lat_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lat_deg_intruder")
+*   defined in: [Streaming PCDs](pcds-1-properties-lat_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lat_deg_intruder")
 
 ### lat\_deg\_intruder Type
 
@@ -276,7 +276,7 @@ Longitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-lon_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/lon_deg_intruder")
+*   defined in: [Streaming PCDs](pcds-1-properties-lon_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/lon_deg_intruder")
 
 ### lon\_deg\_intruder Type
 
@@ -294,7 +294,7 @@ Datetime at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-proj_date_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_date_intruder")
+*   defined in: [Streaming PCDs](pcds-1-properties-proj_date_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_date_intruder")
 
 ### proj\_date\_intruder Type
 
@@ -312,7 +312,7 @@ Latitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-proj_lat_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_intruder")
+*   defined in: [Streaming PCDs](pcds-1-properties-proj_lat_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lat_deg_intruder")
 
 ### proj\_lat\_deg\_intruder Type
 
@@ -330,7 +330,7 @@ Longitude at 6 seconds projection in order to facilitate interpolations
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-proj_lon_deg_intruder.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_intruder")
+*   defined in: [Streaming PCDs](pcds-1-properties-proj_lon_deg_intruder.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/proj_lon_deg_intruder")
 
 ### proj\_lon\_deg\_intruder Type
 
@@ -348,7 +348,7 @@ Oldest datime from pair of flights for delay metrics
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-ref_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/ref_epoch")
+*   defined in: [Streaming PCDs](pcds-1-properties-ref_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/ref_epoch")
 
 ### ref\_epoch Type
 
@@ -366,7 +366,7 @@ Most recent datetime from the pair of flights
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-current_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/current_epoch")
+*   defined in: [Streaming PCDs](pcds-1-properties-current_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/current_epoch")
 
 ### current\_epoch Type
 
@@ -384,7 +384,7 @@ Distance between the pair measured at current datetime
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-current_distance_nm.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/current_distance_nm")
+*   defined in: [Streaming PCDs](pcds-1-properties-current_distance_nm.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/current_distance_nm")
 
 ### current\_distance\_nm Type
 
@@ -402,7 +402,7 @@ Target warning datetime
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-warning_epoch.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/warning_epoch")
+*   defined in: [Streaming PCDs](pcds-1-properties-warning_epoch.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/warning_epoch")
 
 ### warning\_epoch Type
 
@@ -420,7 +420,7 @@ Target warning distance in NM
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-warning_distance_nm.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/warning_distance_nm")
+*   defined in: [Streaming PCDs](pcds-1-properties-warning_distance_nm.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/warning_distance_nm")
 
 ### warning\_distance\_nm Type
 
@@ -438,7 +438,7 @@ Latitude in degrees of the CPA for the ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-cpa_ownship_lat_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lat_deg")
+*   defined in: [Streaming PCDs](pcds-1-properties-cpa_ownship_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lat_deg")
 
 ### cpa\_ownship\_lat\_deg Type
 
@@ -456,7 +456,7 @@ Longitude in degrees of the CPA for the ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-cpa_ownship_lon_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lon_deg")
+*   defined in: [Streaming PCDs](pcds-1-properties-cpa_ownship_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_ownship_lon_deg")
 
 ### cpa\_ownship\_lon\_deg Type
 
@@ -474,7 +474,7 @@ Longitude in degrees of the CPA for the ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-cpa_intruder_lat_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lat_deg")
+*   defined in: [Streaming PCDs](pcds-1-properties-cpa_intruder_lat_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lat_deg")
 
 ### cpa\_intruder\_lat\_deg Type
 
@@ -492,7 +492,7 @@ Longitude in degrees of the CPA for the ownship
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-cpa_intruder_lon_deg.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lon_deg")
+*   defined in: [Streaming PCDs](pcds-1-properties-cpa_intruder_lon_deg.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/cpa_intruder_lon_deg")
 
 ### cpa\_intruder\_lon\_deg Type
 
@@ -510,7 +510,7 @@ Flag indicating which aircraft is crossing first
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-is_ownship_first.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/is_ownship_first")
+*   defined in: [Streaming PCDs](pcds-1-properties-is_ownship_first.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/is_ownship_first")
 
 ### is\_ownship\_first Type
 
@@ -528,7 +528,7 @@ Month as number, extracted from date, used as partition column
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-month.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/month")
+*   defined in: [Streaming PCDs](pcds-1-properties-month.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/month")
 
 ### month Type
 
@@ -546,7 +546,7 @@ Day extracted from date, used as partition column
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-day.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/day")
+*   defined in: [Streaming PCDs](pcds-1-properties-day.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/day")
 
 ### day Type
 
@@ -564,7 +564,7 @@ Hour extracted from date, used as partition column
 
 *   cannot be null
 
-*   defined in: [Streaming PCDs](pcds-1-properties-hour.md "https://github.com/databeacon/level5-schemas/schemas/batch/pcds.schema.json#/properties/hour")
+*   defined in: [Streaming PCDs](pcds-1-properties-hour.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/pcds.schema.json#/properties/hour")
 
 ### hour Type
 

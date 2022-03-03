@@ -1,7 +1,7 @@
 # Untitled number in Batch Flights Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/edit/main/schemas/batch/flights.schema.json#/properties/proj_alt_ft
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/flights.schema.json#/properties/proj_alt_ft
 ```
 
 Altitude at 6 seconds projection in order to facilitate interpolations

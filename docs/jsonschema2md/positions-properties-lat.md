@@ -1,7 +1,7 @@
 # Untitled number in Firehose Positions Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/firehose/positions.schema.json#/properties/lat
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json#/properties/lat
 ```
 
 Latitude in decimal degrees, rounded to 5 decimal points

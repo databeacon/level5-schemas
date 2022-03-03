@@ -1,7 +1,7 @@
 # Streaming FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json
 ```
 
 Definition for a flights static data
@@ -16,22 +16,22 @@ Definition for a flights static data
 
 # Streaming FLIFO Properties
 
-| Property                                      | Type      | Required | Nullable       | Defined by                                                                                                                                                                      |
-| :-------------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [date](#date)                                 | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-date.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/date")                               |
-| [id](#id)                                     | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/id")                                   |
-| [callsign\_icao](#callsign_icao)              | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/callsign_icao")             |
-| [callsign\_iata](#callsign_iata)              | `number`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-callsign_iata.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/callsign_iata")             |
-| [ac\_type](#ac_type)                          | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-ac_type.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/ac_type")                         |
-| [aprt\_departure\_icao](#aprt_departure_icao) | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/aprt_departure_icao") |
-| [aprt\_arrival\_icao](#aprt_arrival_icao)     | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/aprt_arrival_icao")     |
-| [status](#status)                             | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-status.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/status")                           |
-| [scheduled\_off](#scheduled_off)              | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-scheduled_off.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/scheduled_off")             |
-| [scheduled\_on](#scheduled_on)                | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-scheduled_on.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/scheduled_on")               |
-| [estimated\_off](#estimated_off)              | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-estimated_off.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/estimated_off")             |
-| [estimated\_on](#estimated_on)                | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-estimated_on.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/estimated_on")               |
-| [actual\_on](#actual_on)                      | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-actual_on.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/actual_on")                     |
-| [actual\_off](#actual_off)                    | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-actual_off.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/actual_off")                   |
+| Property                                      | Type      | Required | Nullable       | Defined by                                                                                                                                                                                          |
+| :-------------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [date](#date)                                 | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-date.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/date")                               |
+| [id](#id)                                     | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/id")                                   |
+| [callsign\_icao](#callsign_icao)              | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-callsign_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/callsign_icao")             |
+| [callsign\_iata](#callsign_iata)              | `number`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-callsign_iata.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/callsign_iata")             |
+| [ac\_type](#ac_type)                          | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-ac_type.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/ac_type")                         |
+| [aprt\_departure\_icao](#aprt_departure_icao) | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-aprt_departure_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/aprt_departure_icao") |
+| [aprt\_arrival\_icao](#aprt_arrival_icao)     | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-aprt_arrival_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/aprt_arrival_icao")     |
+| [status](#status)                             | `string`  | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/status")                           |
+| [scheduled\_off](#scheduled_off)              | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-scheduled_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/scheduled_off")             |
+| [scheduled\_on](#scheduled_on)                | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-scheduled_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/scheduled_on")               |
+| [estimated\_off](#estimated_off)              | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-estimated_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/estimated_off")             |
+| [estimated\_on](#estimated_on)                | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-estimated_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/estimated_on")               |
+| [actual\_on](#actual_on)                      | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-actual_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/actual_on")                     |
+| [actual\_off](#actual_off)                    | `integer` | Optional | cannot be null | [Streaming FLIFO](flifo-1-properties-actual_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/actual_off")                   |
 
 ## date
 
@@ -45,7 +45,7 @@ Message dateime
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-date.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/date")
+*   defined in: [Streaming FLIFO](flifo-1-properties-date.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/date")
 
 ### date Type
 
@@ -63,7 +63,7 @@ Flight unique identifier
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-id.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/id")
+*   defined in: [Streaming FLIFO](flifo-1-properties-id.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/id")
 
 ### id Type
 
@@ -81,7 +81,7 @@ Callsign identifying the flight as airline ICAO code
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-callsign_icao.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/callsign_icao")
+*   defined in: [Streaming FLIFO](flifo-1-properties-callsign_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/callsign_icao")
 
 ### callsign\_icao Type
 
@@ -99,7 +99,7 @@ Callsign identifying the flight as IATA/ticketing flight number
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-callsign_iata.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/callsign_iata")
+*   defined in: [Streaming FLIFO](flifo-1-properties-callsign_iata.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/callsign_iata")
 
 ### callsign\_iata Type
 
@@ -117,7 +117,7 @@ FAA or ICAO aircraft type code
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-ac_type.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/ac_type")
+*   defined in: [Streaming FLIFO](flifo-1-properties-ac_type.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/ac_type")
 
 ### ac\_type Type
 
@@ -135,7 +135,7 @@ ICAO airport code, waypoint, or latitude/longitude pair
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-aprt_departure_icao.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/aprt_departure_icao")
+*   defined in: [Streaming FLIFO](flifo-1-properties-aprt_departure_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/aprt_departure_icao")
 
 ### aprt\_departure\_icao Type
 
@@ -153,7 +153,7 @@ ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not k
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-aprt_arrival_icao.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/aprt_arrival_icao")
+*   defined in: [Streaming FLIFO](flifo-1-properties-aprt_arrival_icao.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/aprt_arrival_icao")
 
 ### aprt\_arrival\_icao Type
 
@@ -171,7 +171,7 @@ Single letter code for current flight status, can be S Scheduled, F Filed, A Act
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-status.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/status")
+*   defined in: [Streaming FLIFO](flifo-1-properties-status.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/status")
 
 ### status Type
 
@@ -189,7 +189,7 @@ The scheduled out (gate departure) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-scheduled_off.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/scheduled_off")
+*   defined in: [Streaming FLIFO](flifo-1-properties-scheduled_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/scheduled_off")
 
 ### scheduled\_off Type
 
@@ -207,7 +207,7 @@ The scheduled in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-scheduled_on.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/scheduled_on")
+*   defined in: [Streaming FLIFO](flifo-1-properties-scheduled_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/scheduled_on")
 
 ### scheduled\_on Type
 
@@ -225,7 +225,7 @@ The estimated out (gate departure) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-estimated_off.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/estimated_off")
+*   defined in: [Streaming FLIFO](flifo-1-properties-estimated_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/estimated_off")
 
 ### estimated\_off Type
 
@@ -243,7 +243,7 @@ The estimated in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-estimated_on.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/estimated_on")
+*   defined in: [Streaming FLIFO](flifo-1-properties-estimated_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/estimated_on")
 
 ### estimated\_on Type
 
@@ -261,7 +261,7 @@ The actual in (gate arrival) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-actual_on.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/actual_on")
+*   defined in: [Streaming FLIFO](flifo-1-properties-actual_on.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/actual_on")
 
 ### actual\_on Type
 
@@ -279,7 +279,7 @@ The actual out (gate departure) time (POSIX epoch format)
 
 *   cannot be null
 
-*   defined in: [Streaming FLIFO](flifo-1-properties-actual_off.md "https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/actual_off")
+*   defined in: [Streaming FLIFO](flifo-1-properties-actual_off.md "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/actual_off")
 
 ### actual\_off Type
 

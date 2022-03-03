@@ -1,7 +1,7 @@
 # Untitled integer in Manouvres (historical data) Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/batch/manouvres.schema.json#/properties/hour
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/manouvres.schema.json#/properties/hour
 ```
 
 Hour extracted from date, used as partition column

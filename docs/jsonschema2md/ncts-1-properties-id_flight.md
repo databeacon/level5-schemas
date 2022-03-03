@@ -1,10 +1,10 @@
 # Untitled string in Streaming NCTs Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/ncts.schema.json#/properties/id_flight
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/ncts.schema.json#/properties/id_flight
 ```
 
-
+Flight unique identifier
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |

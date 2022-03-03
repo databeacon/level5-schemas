@@ -1,7 +1,7 @@
 # Untitled string in Streaming FLIFO Schema
 
 ```txt
-https://github.com/databeacon/level5-schemas/schemas/streaming/flifo.schema.json#/properties/ac_type
+https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/flifo.schema.json#/properties/ac_type
 ```
 
 FAA or ICAO aircraft type code
