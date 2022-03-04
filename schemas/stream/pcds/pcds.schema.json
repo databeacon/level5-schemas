@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/streaming/pcds.schema.json",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/stream/pcds/pcds.schema.json",
     "title": "Streaming PCDs",
     "version": "1.0.0",
     "description": "Definition of the streaming PCDs data",
