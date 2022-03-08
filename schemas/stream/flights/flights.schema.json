@@ -2,23 +2,18 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/stream/flights/flights.schema.json",
     "title": "Streaming Flights",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Definition for a flights dynamic data",
     "type": "object",
     "properties": {
+        "id": {
+            "description": "Flight unique identifier",
+            "type": "string"
+        },
         "date": {
             "description": "Message datetime",
             "type": "string",
             "format": "date"
-        },
-        "pitr": {
-            "description": "Message PITR",
-            "type": "string",
-            "format": "date"
-        },
-        "id": {
-            "description": "Flight unique identifier",
-            "type": "string"
         },
         "callsign_icao": {
             "description": "ICAO callsign",
@@ -35,22 +30,6 @@
         "alt_ft": {
             "description": "Altitude in feet",
             "type": "integer"
-        },
-        "proj_date": {
-            "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
-            "type": "integer"
-        },
-        "proj_lat_deg": {
-            "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "number"
-        },
-        "proj_lon_deg": {
-            "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "number"
-        },
-        "proj_alt_ft": {
-            "description": "Altitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "number"
         },
         "nav_alt_ft": {
             "description": "Target altitude Mode-S",
@@ -76,22 +55,6 @@
             "description": "Target flight level Mode-S",
             "type": "integer"
         },
-        "nav_heading_deg": {
-            "description": "Target heading Mode-S",
-            "type": "integer"
-        },
-        "horizontal_status": {
-            "description": "Aircraft horizontal manouvre",
-            "type": "string"
-        },
-        "vertical_status": {
-            "description": "Aircraft vertical manouvre",
-            "type": "string"
-        },
-        "turn_speed_deg_s": {
-            "description": "Turning speed as degrees per second",
-            "type": "integer"
-        },
         "vertical_speed_ft_min": {
             "description": "Vertical speed as feet per minute",
             "type": "integer"
@@ -103,14 +66,6 @@
         "aprt_arrival_icao": {
             "description": "Arrival airport. ICAO format",
             "type": "string"
-        },
-        "is_leaving": {
-            "description": "Flag true if the aircraft is leaving the defined area",
-            "type": "boolean"
-        },
-        "date_leaving": {
-            "description": "Expected last datetime after the aircraft leaves te defined area",
-            "type": "integer"
         }
     }
 }

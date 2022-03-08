@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/rest/aggregations.schema.json",
     "title": "Aggregations",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "KPI aggregations for Sierra5 supervisor tool",
     "type": "object",
     "properties": {

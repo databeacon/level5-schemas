@@ -1,19 +1,19 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/stream/firehose-position/positions.schema.json",
-    "title": "Streaming Current Positions",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/stream/current-positions/positions.schema.json",
+    "title": "Delta current positions",
     "version": "1.0.1",
-    "description": "Definition for current positions caché used for streaming calculations",
+    "description": "Definition for a flights dynamic data",
     "type": "object",
     "properties": {
+        "id": {
+            "description": "Flight unique identifier",
+            "type": "string"
+        },
         "date": {
             "description": "Message datetime",
             "type": "string",
             "format": "date"
-        },
-        "id": {
-            "description": "Flight unique identifier",
-            "type": "string"
         },
         "callsign_icao": {
             "description": "ICAO callsign",
@@ -29,11 +29,15 @@
         },
         "alt_ft": {
             "description": "Altitude in feet",
-            "type": "number"
+            "type": "integer"
+        },
+        "nav_alt_ft": {
+            "description": "Target altitude Mode-S",
+            "type": "integer"
         },
         "track_deg": {
             "description": "Aircraft's heading. From FlightAware data",
-            "type": "number"
+            "type": "integer"
         },
         "gs_kts": {
             "description": "Groundspeed in knots",
@@ -54,14 +58,6 @@
         "aprt_arrival_icao": {
             "description": "Arrival airport. ICAO format",
             "type": "string"
-        },
-        "is_leaving": {
-            "description": "Flag true if the aircraft is leaving the defined area",
-            "type": "boolean"
-        },
-        "date_leaving": {
-            "description": "Expected last datetime after the aircraft leaves te defined area",
-            "type": "integer"
         }
     }
 }

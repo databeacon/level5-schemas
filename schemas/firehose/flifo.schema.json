@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json",
     "title": "Firehose FLIFO",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Definition for firehose static flight information",
     "type": "object",
     "properties": {
