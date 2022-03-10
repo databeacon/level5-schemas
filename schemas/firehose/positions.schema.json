@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/positions.schema.json",
     "title": "Firehose Positions",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Definition for a firehose positions data",
     "type": "object",
     "properties": {

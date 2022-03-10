@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/stream/pcds/pcds.schema.json",
     "title": "Streaming PCDs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Definition of the streaming PCDs data",
     "type": "object",
     "properties": {
@@ -34,18 +34,6 @@
             "description": "Longitude in degrees from last position received from ownship",
             "type": "number"
         },
-        "proj_date_ownship": {
-            "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
-            "type": "integer"
-        },
-        "proj_lat_deg_ownship": {
-            "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "number"
-        },
-        "proj_lon_deg_ownship": {
-            "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "number"
-        },
         "date_intruder": {
             "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
             "type": "integer"
@@ -55,18 +43,6 @@
             "type": "number"
         },
         "lon_deg_intruder": {
-            "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "number"
-        },
-        "proj_date_intruder": {
-            "description": "Datetime at 6 seconds projection in order to facilitate interpolations",
-            "type": "integer"
-        },
-        "proj_lat_deg_intruder": {
-            "description": "Latitude at 6 seconds projection in order to facilitate interpolations",
-            "type": "number"
-        },
-        "proj_lon_deg_intruder": {
             "description": "Longitude at 6 seconds projection in order to facilitate interpolations",
             "type": "number"
         },

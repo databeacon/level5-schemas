@@ -2,7 +2,7 @@
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/stream/firehose-flifo/flifo.schema.json",
     "title": "Streaming FLIFO",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Definition for a flights static data",
     "type": "object",
     "properties": {
