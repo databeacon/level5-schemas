@@ -26,7 +26,7 @@
             "type": "boolean"
         },
         "mode": {
-            "type": "Calculation mode",
+            "title": "Calculation mode",
             "enum": ["enhanced", "horizontal"]
         },
         "epoch": {
