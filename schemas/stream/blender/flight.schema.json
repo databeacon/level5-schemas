@@ -66,7 +66,9 @@
             "required": ["message", "synced", "projected"]
         },
         "nct": {
-            "$ref": "./nct.schema.json"
+            "title": "Non conflicting traffic",
+            "type": "array",
+            "items": { "$ref": "./nct.schema.json" }
         },
         "pcds": {
             "title": "Potential conflicts detected",
