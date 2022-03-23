@@ -65,7 +65,7 @@
             "additionalProperties": false,
             "required": ["message", "synced", "projected"]
         },
-        "nct": {
+        "ncts": {
             "title": "Non conflicting traffic",
             "type": "array",
             "items": { "$ref": "./nct.schema.json" }
