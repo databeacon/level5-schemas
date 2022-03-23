@@ -39,5 +39,5 @@
         }
     },
     "additionalProperties": false,
-    "required": ["id", "flightId", "sectorId", "isNct", "mode", "showHalo", "epoch", "projExit"]
+    "required": ["id", "flightId", "isNct", "epoch", "mode", "showHalo"]
 }
