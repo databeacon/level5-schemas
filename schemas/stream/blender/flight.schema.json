@@ -34,7 +34,7 @@
             "type": "integer"
         },
         "verticalStatus": {
-            "description": "Categorical vertical status (climbing, descending or cruising)",
+            "description": "Categorical vertical status (climbing, descending, cruising or unknown)",
             "type": "string"
         },
         "callsign": {
