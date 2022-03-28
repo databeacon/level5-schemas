@@ -33,6 +33,10 @@
             "description": "Vertical speed as feet per minute",
             "type": "integer"
         },
+        "verticalStatus": {
+            "description": "Categorical vertical status (climbing, descending or cruising)",
+            "type": "string"
+        },
         "callsign": {
             "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
             "type": "integer"
@@ -84,6 +88,7 @@
         "selectedAlt",
         "selectedFlightLevel",
         "verticalSpeed",
+        "verticalStatus",
         "callsign",
         "aprtDeparture",
         "aprtArrival",
