@@ -1,71 +1,242 @@
 {
-    "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/firehose/flifo.schema.json",
-    "title": "Firehose FLIFO",
-    "version": "1.0.1",
-    "description": "Definition for firehose static flight information",
-    "type": "object",
-    "properties": {
-        "pitr": {
-            "description": "Point in time recovery",
-            "type": "integer"
-        },
-        "id": {
-            "description": "FlightAware flight id",
-            "type": "string"
-        },
-        "ident": {
-            "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
-            "type": "string"
-        },
-        "atcident": {
-            "description": "Identifier used for ATC, if it differs from flight identifier",
-            "type": "string"
-        },
-        "reg": {
-            "description": "The tail number or registration of the aircraft, if known and it differs from the ident",
-            "type": "string"
-        },
-        "aircrafttype": {
-            "description": "FAA or ICAO aircraft type code",
-            "type": "string"
-        },
-        "orig": {
-            "description": "ICAO airport code, waypoint, or latitude/longitude pair",
-            "type": "string"
-        },
-        "dest": {
-            "description": "ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not known",
-            "type": "string"
-        },
-        "status": {
-            "description": "Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled",
-            "type": "string"
-        },
-        "scheduled_off": {
-            "description": "The scheduled out (gate departure) time (POSIX epoch format)",
-            "type": "integer"
-        },
-        "scheduled_on": {
-            "description": "The scheduled in (gate arrival) time (POSIX epoch format)",
-            "type": "integer"
-        },
-        "estimated_off": {
-            "description": "The estimated out (gate departure) time (POSIX epoch format)",
-            "type": "integer"
-        },
-        "estimated_on": {
-            "description": "The estimated in (gate arrival) time (POSIX epoch format)",
-            "type": "integer"
-        },
-        "actual_on": {
-            "description": "The actual in (gate arrival) time (POSIX epoch format)",
-            "type": "integer"
-        },
-        "actual_off": {
-            "description": "The actual out (gate departure) time (POSIX epoch format)",
-            "type": "integer"
-        }
-    },
-    "required": [ "id", "ident", "pitr" ]
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "description": "Flifo: flightplan and extended flightplan information on a flight",
+   "definitions": {
+      "waypoint" : {
+         "description": "Waypoint Formatting: for waypoints and 4d_waypoints fields",
+         "properties": {
+            "lat":{
+               "type":"number",
+               "description": "Latitude: In decimal degrees"
+            },
+            "lon":{
+               "type":"number",
+               "description": "Longitude: In decimal degrees"
+            },
+            "clock":{
+               "type":"number",
+               "description": "Time: In POSIX epoch format"
+            },
+            "name":{
+               "type":"string",
+               "description": "Name: Airport, navaid, waypoint, intersection, or other identifier"
+            },
+            "alt":{
+               "type":"number",
+               "description": "Altitude: In feet (MSL)"
+            },
+            "gs":{
+               "type":"number",
+               "description": "Groundspeed: In knots"
+            }
+         },
+         "required": ["lat", "lon"]
+      }
+   },
+   "properties": {
+      "pitr":{
+         "type":"string",
+         "description": "Point In Time Recovery: Timestamp value that should be supplied to the \"pitr\" connection initiation command when reconnecting and you wish to resume firehose playback at that approximate position"
+      },
+      "type":{
+         "enum": [ "flifo"],
+         "description": "Message type: Value is always flifo"
+      },
+      "ident":{
+         "type":"string",
+         "description": "Flight Identifier: Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration."
+      },
+      "id":{
+         "type":"string",
+         "description": "FlightAware flight id: Unique identifier associated with each flight (faFlightID)"
+      },
+      "orig":{
+         "type":"string",
+         "description": "Origin: ICAO airport code, waypoint, or latitude/longitude pair"
+      }, 
+      "dest":{
+         "type":"string",
+         "description": "Destination: ICAO airport code, waypoint, or latitude/longitude pair. May be missing if not known."
+      },
+      "status":{
+         "enum": [ "S", "F", "A", "Z", "X"],
+         "description": "Flight Status: Single letter code for current flight status, can be S Scheduled, F Filed, A Active, Z Completed, or X Cancelled."
+      },
+      "scheduled_out":{
+         "type":"string",
+         "description": "Scheduled Out: The scheduled out (gate departure) time (POSIX epoch format / requires extended flight info permission)."
+      },
+      "estimated_out":{
+         "type":"string",
+         "description": "Estimated Out: The estimated out (gate departure) time (POSIX epoch format / requires extended flight info permission)."
+      },
+      "predicted_out":{
+         "type":"string",
+         "description": "Predicted Out: The predicted out (gate departure) time, if enabled for the account (POSIX epoch format / requires predicted data and extended flight info permissions)."
+      },
+      "actual_out":{
+         "type":"string",
+         "description": "Actual Out: The actual out (gate departure) time (POSIX epoch format / requires extended flight info permission)."
+      },
+      "scheduled_off":{
+         "type":"string",
+         "description": "Filed Departure Time: Timestamp that was originally listed in the filed flight plan for the departure (POSIX epoch format)."
+      },
+      "estimated_off":{
+         "type":"string",
+         "description": "Estimated Departure Time: Revised timestamp of when the flight is expected to depart (POSIX epoch format)."
+      },
+      "predicted_off":{
+         "type":"string",
+         "description": "Predicted Off: The predicted off (runway departure) time, if enabled for the account (POSIX epoch format / requires predicted data permission)."
+      },
+      "actual_off":{
+         "type":"string",
+         "description": "Actual Departure Time: Timestamp of when the flight actually departed (POSIX epoch format)."
+      },
+      "scheduled_on":{
+         "type":"string",
+         "description": "Filed Arrival Time: Computed from the filed departure time and time enroute (POSIX epoch format)."
+      },
+      "estimated_on":{
+         "type":"string",
+         "description": "Estimated Arrival Time: Time the aircraft is estimated to touch down at the airport (POSIX epoch format)."
+      },
+      "predicted_on":{
+         "type":"string",
+         "description": "Predicted On: The predicted in (runway arrival) time, if enabled for the account (POSIX epoch format / requires predicted data permission)."
+      },
+      "actual_on":{
+         "type":"string",
+         "description": "Actual Arrival Time: Time the aircraft touched down at the airport (POSIX epoch format)."
+      },
+      "scheduled_in":{
+         "type":"string",
+         "description": "Scheduled In: The scheduled in (gate arrival) time. (POSIX epoch format / requires extended flight info permission)."
+      },
+      "estimated_in":{
+         "type":"string",
+         "description": "Estimated In: The estimated in (gate arrival) time (POSIX epoch format / requires extended flight info permission)."
+      },
+      "predicted_in":{
+         "type":"string",
+         "description": "Predicted In: The predicted in (gate arrival) time, if enabled for the account (POSIX epoch format / requires predicted data and extended flight info permissions)."
+      },
+      "actual_in":{
+         "type":"string",
+         "description": "Actual In: The actual in (gate arrival) time (POSIX epoch format / requires extended flight info permission)."
+      },
+      "filed_ete":{
+         "type":"string",
+         "description": "Filed En route Time: In seconds. May be missing if not known."
+      },
+      "ete":{
+         "type":"string",
+         "description": "En route Time: In seconds. May be missing if not known."
+      },
+      "aircrafttype":{
+         "type":"string",
+         "description": "Aircraft Type: FAA or ICAO aircraft type code"
+      },
+      "reg":{
+         "type":"string",
+         "description": "Aircraft Registration: The tail number or registration of the aircraft, if known and it differs from the ident."
+      },
+      "filed_airspeed":{
+         "type":"string",
+         "description": "Filed cruising airspeed: In knots"
+      },
+      "filed_alt":{
+         "type":"string",
+         "description": "Filed Cruising altitude: In feet (MSL). Emitted before a flight's departure and indicates the filed cruising altitude for that flight."
+      },
+      "cruise_alt":{
+         "type":"string",
+         "description": "Cruising altitude: In feet (MSL). Emitted after a flight's departure and indicates the expected cruising altitude for that flight."
+      },
+      "facility_hash":{
+         "type":"string",
+         "description": "Reporting facility hash: A consistent and unique obfusticated identifier string for each source reporting positions to FlightAware"
+      },
+      "facility_name":{
+         "type":"string",
+         "description": "Reporting facility name: A description of the reporting facility intended for end-user consumption. May be a blank string if undefined."
+      },
+
+      "waypoints":{
+         "type": "array",
+         "items": {
+            "$ref": "#/definitions/waypoint"
+         },
+         "description": "Waypoints: 2D, 3D, or 4D objects of locations, times, and altitudes formatted as a JSON array"
+      },
+      "route":{
+         "type":"string",
+         "description": "Text route: Textual route string"
+      },
+      "atcident":{
+         "type":"string",
+         "description": "ATC Ident: Identifier used for ATC, if it differs from flight identifier"
+      },
+      "hexid":{
+         "type":"string",
+         "description": "Transponder Mode S code: 24-bit Mode S transponder code assigned by aircraft registrar. Formatted in upper case hexadecimal"
+      },
+      "trueCancel":{
+         "type":"string",
+         "description": "True Cancellation: Set to 1 when a confirmed flight cancellation was received from the airline. A value of 0 or lack of this field means that this is a presumed cancellation due to expiration or lack of data."
+      },
+	  "actual_runway_off": {
+		  "type":"string",
+		  "description": "Actual Departure Runway: The runway from which the plane departed."
+	  },
+	  "actual_runway_on": {
+		  "type":"string",
+		  "description": "Actual Arrival Runway: The runway on which the plane landed."
+	  },
+      "scheduled_departure_gate":{
+         "type":"string",
+         "description": "Scheduled Departure Gate: The gate from which the plane is scheduled to depart (requires extended flight info permission)."
+      },
+      "actual_departure_gate":{
+         "type":"string",
+         "description": "Actual Departure Gate: The gate from which the plane has departed (requires extended flight info permission)."
+      },
+      "scheduled_arrival_gate":{
+         "type":"string",
+         "description": "Scheduled Arrival Gate: The gate at which the plane is scheduled to arrive (requires extended flight info permission)."
+      },
+      "actual_arrival_gate":{
+         "type":"string",
+         "description": "Actual Arrival Gate: The gate at which the plane has arrived (requires extended flight info permission)."
+      },
+      "scheduled_departure_terminal":{
+         "type":"string",
+         "description": "Scheduled Departure Terminal: The terminal at which the plane is scheduled to depart (requires extended flight info permission)."
+      },
+      "actual_departure_terminal":{
+         "type":"string",
+         "description": "Actual Departure Terminal: The terminal at which the plane has departed (requires extended flight info permission)."
+      },
+      "scheduled_arrival_terminal":{
+         "type":"string",
+         "description": "Scheduled Arrival Terminal: The terminal at which the plane is scheduled to arrive (requires extended flight info permission)."
+      },
+      "actual_arrival_terminal":{
+         "type":"string",
+         "description": "Actual Arrival Terminal: The terminal at which the plane has arrived (requires extended flight info permission)."
+      },
+      "baggage_claim":{
+         "type":"string",
+         "description": "Baggage Claim: The carousel at which the baggage will or has arrived at the destination airport (requires extended flight info permission)."
+      }
+      ,
+      "predicted_taxi_out_duration":{
+         "type": "string",
+         "description": "Predicted Taxi Out Duration: In seconds. The predicted duration of taxiing out."
+      }
+   },
+   "required": ["pitr", "type", "ident", "id"],
+   "type":"object",
+   "additionalProperties": false
 }
