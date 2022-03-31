@@ -39,15 +39,15 @@
         },
         "callsign": {
             "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
-            "type": "integer"
+            "type": "string"
         },
         "aprtDeparture": {
             "description": "Departure airport. ICAO format",
-            "type": "integer"
+            "type": "string"
         },
         "aprtArrival": {
             "description": "Arrival airport. ICAO format",
-            "type": "integer"
+            "type": "string"
         },
         "points4d": {
             "title": "Flight positions",
