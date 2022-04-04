@@ -38,6 +38,10 @@
             "description": "Altitude in feet (MSL)",
             "type": "number"
         },
+        "gs": {
+            "description": "Groundspeed in kts",
+            "type": "number"
+        },
         "nav_altitude": {
             "description": "The altitude setting, in feet, from the navigation equipment (Mode-S)",
             "type": "number"
