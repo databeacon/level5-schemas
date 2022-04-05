@@ -35,6 +35,11 @@
             "description": "Target altitude Mode-S",
             "type": "integer"
         },
+         "nav_heading_deg": {
+            "description": "Target altitude Mode-S",
+            "type": "integer"
+        },
+        
         "track_deg": {
             "description": "Aircraft's heading. From FlightAware data",
             "type": "integer"
