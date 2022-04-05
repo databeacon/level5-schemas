@@ -51,6 +51,10 @@
             "description": "Flight level as the number of FLXXX",
             "type": "integer"
         },
+        "nav_heading_deg": {
+            "description": "Target flight level Mode-S",
+            "type": "integer"
+        },
         "nav_flight_level": {
             "description": "Target flight level Mode-S",
             "type": "integer"
