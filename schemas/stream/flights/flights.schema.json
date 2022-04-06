@@ -12,8 +12,7 @@
         },
         "date": {
             "description": "Message datetime",
-            "type": "string",
-            "format": "date"
+            "type": "number"
         },
         "callsign_icao": {
             "description": "ICAO callsign",
