@@ -28,19 +28,19 @@
         },
         "alt_ft": {
             "description": "Altitude in feet",
-            "type": "integer"
+            "type": "number"
         },
         "nav_alt_ft": {
             "description": "Target altitude Mode-S",
-            "type": "integer"
+            "type": "number"
         },
         "track_deg": {
             "description": "Aircraft's heading. From FlightAware data",
-            "type": "integer"
+            "type": "number"
         },
         "gs_kts": {
             "description": "Groundspeed in knots",
-            "type": "integer"
+            "type": "number"
         },
         "id_hexcell": {
             "description": "H3 hexcell identifier",
@@ -48,19 +48,19 @@
         },
         "flight_level": {
             "description": "Flight level as the number of FLXXX",
-            "type": "integer"
+            "type": "number"
         },
         "nav_heading_deg": {
             "description": "Target flight level Mode-S",
-            "type": "integer"
+            "type": "number"
         },
         "nav_flight_level": {
             "description": "Target flight level Mode-S",
-            "type": "integer"
+            "type": "number"
         },
         "vertical_speed_ft_min": {
             "description": "Vertical speed as feet per minute",
-            "type": "integer"
+            "type": "number"
         },
         "aprt_departure_icao": {
             "description": "Departure airport. ICAO format",
