@@ -9,6 +9,10 @@
             "description": "Flight unique identifier",
             "type": "string"
         },
+        "active": {
+            "description": "Flag for active flight (false refers to timeout))",
+            "type": "boolean"
+        },
         "gs": {
             "description": "Aircraft groundspeed in kts",
             "type": "number"
