@@ -22,7 +22,7 @@
             }
         },
         "hexcell_id": {
-            "title": "Message hexcell. Flights included have sync position in the hexcell.",
+            "title": "Message hexcell id. Flights included have sync position within hexcell boundaries.",
             "type": "string"
         },
         "flights": {
