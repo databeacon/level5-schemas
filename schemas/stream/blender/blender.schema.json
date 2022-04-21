@@ -10,18 +10,18 @@
             "title": "Synched time, POSIX in seconds.",
             "type": "integer"
         },
-        "num_hexcells": {
+        "hexcellsNumber": {
             "title": "Number of hexcells expected.",
             "type": "integer"
         },
-        "expected_hexcells": {
+        "hexcellsExpected": {
             "title": "List of expected hexcells.",
             "type": "array",
             "items": {
                 "type": "string"
             }
         },
-        "hexcell_id": {
+        "hexcellId": {
             "title": "Message hexcell id. Flights included have sync position within hexcell boundaries.",
             "type": "string"
         },
@@ -32,5 +32,10 @@
         }
     },
     "additionalProperties": false,
-    "required": ["epoch", "num_hexcells", "expected_hexcells", "hexcell_id", "flights"]
+    "required": [
+        "epoch",
+        "hexcellsNumber",
+        "hexcellsExpected",
+        "hexcellId",
+        "flights"]
 }
