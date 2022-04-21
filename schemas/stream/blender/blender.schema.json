@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/stream/blender/blender.schema.json",
+    "title": "Blender",
+    "version": "1.0.1",
+    "description": "Asynchronous topics merging.",
+    "type": "object",
+    "properties": {
+        "epoch": {
+            "title": "Synched time, POSIX in seconds.",
+            "type": "integer"
+        },
+        "num_hexcells": {
+            "title": "Number of hexcells expected.",
+            "type": "integer"
+        },
+        "expected_hexcells": {
+            "title": "List of expected hexcells.",
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "hexcell_id": {
+            "title": "Message hexcell. Flights included have sync position in the hexcell.",
+            "type": "string"
+        },
+        "flights": {
+            "type": "array",
+            "title": "Flights data",
+            "items": { "$ref": "./flight.schema.json" }
+        }
+    },
+    "additionalProperties": false,
+    "required": ["epoch", "num_hexcells", "expected_hexcells", "hexcell_id", "flights"]
+}
