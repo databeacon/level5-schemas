@@ -10,7 +10,7 @@
             "type": "string"
         },
         "gs": {
-            "description": "Aircraft groundspeed in kts",
+            "description": "Aircraft groundspeed in knots",
             "type": "number"
         },
         "track": {
@@ -40,6 +40,14 @@
         "callsign": {
             "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
             "type": "string"
+        },
+        "windSpeedFA": {
+            "description": "Wind speed magnitude in knots from Flight Aware",
+            "type": "number"
+        },
+        "windDirectionFA": {
+            "description": "Wind direction in degrees from Flight Aware data source (opposite direction to wind vector)",
+            "type": "number"
         },
         "aprtDeparture": {
             "description": "Departure airport. ICAO format",
