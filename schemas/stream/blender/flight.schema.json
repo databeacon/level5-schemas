@@ -29,6 +29,10 @@
             "description": "Mode-S selected flight level, eg. FLXXX",
             "type": "integer"
         },
+        "selectedHeading": {
+            "description": "Mode-S selected heading in degrees",
+            "type": "integer"
+        },
         "verticalSpeed": {
             "description": "Vertical speed as feet per minute",
             "type": "integer"
@@ -36,6 +40,10 @@
         "verticalStatus": {
             "description": "Categorical vertical status",
             "enum": ["climbing", "descending", "cruising", "unknown"]
+        },
+        "horizontalStatus": {
+            "description": "Categorical horizontal status",
+            "enum": ["right-turn", "left-turn", "cruising", "unknown"]
         },
         "callsign": {
             "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
@@ -97,6 +105,7 @@
         "selectedFlightLevel",
         "verticalSpeed",
         "verticalStatus",
+        "horizontalStatus",
         "callsign",
         "aprtDeparture",
         "aprtArrival",
