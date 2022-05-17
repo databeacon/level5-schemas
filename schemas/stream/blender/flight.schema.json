@@ -37,6 +37,10 @@
             "description": "Categorical vertical status",
             "enum": ["climbing", "descending", "cruising", "unknown"]
         },
+        "horizontalStatus": {
+            "description": "Categorical horizontal status",
+            "enum": ["right-turn", "left-turn", "cruising", "unknown"]
+        },
         "callsign": {
             "description": "Callsign identifying the flight. Typically, ICAO airline code plus IATA/ticketing flight number, or the aircraft registration",
             "type": "string"
