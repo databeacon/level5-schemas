@@ -24,15 +24,15 @@
         },
         "alt_ft": {
             "description": "Altitude in feet",
-            "type": "integer"
+            "type": "number"
         },
         "fl": {
             "description": "Flight Level",
-            "type": "integer"
+            "type": "number"
         },
         "wind_deg": {
             "description": "Wind direction in degrees (opposite direction to wind vector)",
-            "type": "integer"
+            "type": "number"
         },
         "wind_kts": {
             "description": "Wind speed magnitude in knots",
