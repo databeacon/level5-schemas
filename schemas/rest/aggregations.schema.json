@@ -44,11 +44,11 @@
                                     "type": "string"
                                 },
                                 "start": {
-                                    "description": "Window epoch start",
+                                    "description": "Window epoch start in ms",
                                     "type": "integer"
                                 },
                                 "end": {
-                                    "description": "Window epoch end",
+                                    "description": "Window epoch end in ms",
                                     "type": "integer"
                                 },
                                 "occ": {
