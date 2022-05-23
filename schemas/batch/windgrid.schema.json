@@ -6,12 +6,16 @@
     "description": "Definition for a flights dynamic batch data",
     "type": "object",
     "properties": {
+        "region": {
+            "description": "Wind grid region name (EU, AUS, USA)",
+            "type": "string"
+        },
         "epoch": {
             "description": "Reference calculation epoch of the wind grid, POSIX timestamp in seconds.",
             "type": "integer"
         },
         "id_hexcell": {
-            "description": "hexcell id",
+            "description": "Hexcell id",
             "type": "string"
         },
         "lat_hexcell": {
@@ -22,8 +26,16 @@
             "description": "Hexcell centroid longitude in degrees",
             "type": "number"
         },
-        "alt_ft": {
-            "description": "Altitude in feet",
+        "ref_alt_ft": {
+            "description": "Reference altitude in feet",
+            "type": "number"
+        },
+        "min_alt_ft": {
+            "description": "Minimum altitude of hex volume in feet",
+            "type": "number"
+        },
+        "max_alt_ft": {
+            "description": "Maximum altitude of hex volume in feet",
             "type": "number"
         },
         "fl": {
