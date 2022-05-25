@@ -6,8 +6,8 @@
     "description": "Definition for a flights dynamic batch data",
     "type": "object",
     "properties": {
-        "region": {
-            "description": "Wind grid region name (EU, AUS, USA)",
+        "zone": {
+            "description": "Wind grid zone/region name (EU, AUS, USA)",
             "type": "string"
         },
         "epoch": {
@@ -57,6 +57,10 @@
         "vwind_kts": {
             "description": "South-to-North wind component in knots",
             "type": "number"
+        },
+        "nobs": {
+            "description": "Number of observations",
+            "type": "integer"
         }
     }
 }
