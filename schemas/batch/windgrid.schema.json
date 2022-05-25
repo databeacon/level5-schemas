@@ -59,7 +59,7 @@
             "type": "number"
         },
         "nobs": {
-            "description": "Number of observations",
+            "description": "Number of observations near the hexcell volume boundaries",
             "type": "integer"
         }
     }
