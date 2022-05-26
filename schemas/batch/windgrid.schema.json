@@ -1,0 +1,66 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://raw.githubusercontent.com/databeacon/level5-schemas/main/schemas/batch/windgrid.schema.json",
+    "title": "Wind Grid",
+    "version": "1.0.1",
+    "description": "Definition for a flights dynamic batch data",
+    "type": "object",
+    "properties": {
+        "zone": {
+            "description": "Wind grid zone/region name (EU, AUS, USA)",
+            "type": "string"
+        },
+        "epoch": {
+            "description": "Reference calculation epoch of the wind grid, POSIX timestamp in seconds.",
+            "type": "integer"
+        },
+        "id_hexcell": {
+            "description": "Hexcell id",
+            "type": "string"
+        },
+        "lat_hexcell": {
+            "description": "Hexcell centroid latitude in degrees",
+            "type": "number"
+        },
+        "lon_hexcell": {
+            "description": "Hexcell centroid longitude in degrees",
+            "type": "number"
+        },
+        "ref_alt_ft": {
+            "description": "Reference altitude in feet",
+            "type": "number"
+        },
+        "min_alt_ft": {
+            "description": "Minimum altitude of hex volume in feet",
+            "type": "number"
+        },
+        "max_alt_ft": {
+            "description": "Maximum altitude of hex volume in feet",
+            "type": "number"
+        },
+        "fl": {
+            "description": "Flight Level",
+            "type": "number"
+        },
+        "wind_deg": {
+            "description": "Wind direction in degrees (opposite direction to wind vector)",
+            "type": "number"
+        },
+        "wind_kts": {
+            "description": "Wind speed magnitude in knots",
+            "type": "number"
+        },
+        "uwind_kts": {
+            "description": "West-to-East wind component in knots",
+            "type": "number"
+        },
+        "vwind_kts": {
+            "description": "South-to-North wind component in knots",
+            "type": "number"
+        },
+        "nobs": {
+            "description": "Number of observations near the hexcell volume boundaries",
+            "type": "integer"
+        }
+    }
+}
