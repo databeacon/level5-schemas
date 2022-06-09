@@ -74,7 +74,7 @@
             "type": "string"
         },
         "cumFuel": {
-            "description": "Accumulated fuel in kg since flight entered controlled air volume (currently EU, AUS)",
+            "description": "Accumulated fuel in kg since flight entered controlled air volume e.g. 'EU', 'AUS'",
             "type": "number"
         },
         "badaAttitude": {
