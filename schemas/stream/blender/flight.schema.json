@@ -57,13 +57,33 @@
             "description": "Wind direction in degrees from Flight Aware data source (opposite direction to wind vector)",
             "type": "number"
         },
-        "aprtDeparture": {
+        "aprtDep": {
             "description": "Departure airport. ICAO format",
             "type": "string"
         },
-        "aprtArrival": {
+        "aprtArr": {
             "description": "Arrival airport. ICAO format",
             "type": "string"
+        },
+        "acType": {
+            "description": "Aircraft type",
+            "type": "string"
+        },
+        "acReg": {
+            "description": "Aircraft registration code",
+            "type": "string"
+        },
+        "badaFuelAcc": {
+            "description": "Accumulated fuel in kg since flight entered controlled air volume e.g. 'EU', 'AUS'",
+            "type": "number"
+        },
+        "attitude": {
+            "description": "Categorical attiude for fuel estimation using BADA",
+            "enum": ["CRUISE", "CLIMB", "DESCEND"]
+        },
+        "computedVz": {
+            "description": "Vertical speed retrieved from differentiation with previous point for debug purposes",
+            "type": "number"
         },
         "points4d": {
             "title": "Flight positions",
