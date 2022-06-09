@@ -73,15 +73,15 @@
             "description": "Aircraft registration code",
             "type": "string"
         },
-        "cumFuel": {
+        "badaFuelAcc": {
             "description": "Accumulated fuel in kg since flight entered controlled air volume e.g. 'EU', 'AUS'",
             "type": "number"
         },
-        "badaAttitude": {
+        "attitude": {
             "description": "Categorical attiude for fuel estimation using BADA",
             "enum": ["CRUISE", "CLIMB", "DESCEND"]
         },
-        "badaVertSpeed": {
+        "computedVz": {
             "description": "Vertical speed retrieved from differentiation with previous point for debug purposes",
             "type": "number"
         },
