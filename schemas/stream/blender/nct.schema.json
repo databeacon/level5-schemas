@@ -14,7 +14,7 @@
             "type": "string"
         },
         "sectorId": {
-            "description": "Sector unique identifier",
+            "description": "Sector unique identifier. Available when acg mode",
             "type": "string"
         },
         "isNct": {
@@ -34,7 +34,7 @@
             "type": "integer"
         },
         "projExit": {
-            "description": "Last projected position estimated to be non-conflicting.",
+            "description": "Last projected position estimated to be non-conflicting. Available when isNct true.",
             "$ref": "./point4d.schema.json"
         }
     },
