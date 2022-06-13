@@ -9,6 +9,10 @@
             "description": "Flight unique identifier",
             "type": "string"
         },
+        "zone": {
+            "description": "Zone where aircraft is flying",
+            "type": "string"
+        },
         "gs": {
             "description": "Aircraft groundspeed in knots",
             "type": "number"
