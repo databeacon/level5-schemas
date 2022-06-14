@@ -7,7 +7,7 @@
     "type": "object",
     "properties": {
         "epoch": {
-            "title": "Time, POSIX in seconds",
+            "title": "Time, POSIX in milliseconds",
             "type": "integer"
         },
         "lat": {
