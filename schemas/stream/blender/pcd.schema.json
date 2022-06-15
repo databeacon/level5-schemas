@@ -30,7 +30,7 @@
             "enum": ["enhanced", "horizontal"]
         },
         "epoch": {
-            "title": "Calculation time, POSIX in seconds",
+            "title": "Calculation time, POSIX in milliseconds",
             "type": "integer"
         },
         "currentDist": {
