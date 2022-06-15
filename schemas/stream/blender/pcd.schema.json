@@ -14,7 +14,7 @@
             "type": "boolean"
         },
         "segEpoch": {
-            "title": "Time to CPA, POSIX in seconds",
+            "title": "Time to CPA, POSIX in milliseconds",
             "type": "integer"
         },
         "segDist": {
@@ -30,7 +30,7 @@
             "enum": ["enhanced", "horizontal"]
         },
         "epoch": {
-            "title": "Calculation time, POSIX in seconds",
+            "title": "Calculation time, POSIX in milliseconds",
             "type": "integer"
         },
         "currentDist": {

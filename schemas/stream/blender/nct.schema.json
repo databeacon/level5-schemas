@@ -30,7 +30,7 @@
             "type": "boolean"
         },
         "epoch": {
-            "description": "Calculation time, POSIX in seconds",
+            "description": "Calculation time, POSIX in milliseconds",
             "type": "integer"
         },
         "projExit": {

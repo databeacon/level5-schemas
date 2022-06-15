@@ -7,7 +7,7 @@
     "type": "object",
     "properties": {
         "epoch": {
-            "title": "Synced time, POSIX in seconds.",
+            "title": "Synced time, POSIX in milliseconds.",
             "type": "integer"
         },
         "hexcellsNumber": {
