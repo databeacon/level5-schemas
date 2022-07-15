@@ -83,7 +83,7 @@
         },
         "attitude": {
             "description": "Categorical attiude for fuel estimation using BADA",
-            "enum": ["CRUISE", "CLIMB", "DESCEND"]
+            "enum": ["CRUISE", "CLIMB", "DESCENT"]
         },
         "computedVz": {
             "description": "Vertical speed retrieved from differentiation with previous point for debug purposes",
